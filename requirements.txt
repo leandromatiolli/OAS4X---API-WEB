@@ -1,0 +1,10 @@
+# OAS4X API-WEB
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+jinja2>=3.1.0
+python-multipart>=0.0.6
+numpy>=1.23
+uldaq>=1.2.0
+
+# Etapa 2: Health (RAM, disco)
+psutil>=5.9.0

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Files - OAS4X</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>OAS4X API-WEB</h1>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/acquisition">Acquisition</a>
+            <a href="/files">Files</a>
+            <a href="/health-page">Health</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Files</h2>
+        <p>Runs em /data/raw. Clique para baixar BIN ou JSON.</p>
+        <div id="files-list" class="files-list">
+            <p id="files-loading">Carregando...</p>
+            <table id="files-table" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Timestamp</th>
+                        <th>Teste</th>
+                        <th>Canais</th>
+                        <th>fs (Hz)</th>
+                        <th>Duração (s)</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="/static/js/files.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[Unit]
+Description=OAS4X API-WEB - Aquisição USB-1808X
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=__INSTALL_DIR__
+Environment="PATH=__INSTALL_DIR__/.venv/bin:/usr/local/bin:/usr/bin:/bin"
+Environment="OAS4X_DATA=/data"
+Environment="OAS4X_CALIBRATION=/calibration"
+ExecStart=__INSTALL_DIR__/.venv/bin/python -m uvicorn api.main:app --host 0.0.0.0 --port 8000
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=oas4x
+
+[Install]
+WantedBy=multi-user.target

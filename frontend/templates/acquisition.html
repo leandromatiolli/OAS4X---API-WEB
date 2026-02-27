@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acquisition - OAS4X</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>OAS4X API-WEB</h1>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/acquisition">Acquisition</a>
+            <a href="/files">Files</a>
+            <a href="/health-page">Health</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Acquisition</h2>
+        <p>Selecione canais e/ou sensores, sample rate e duração. Start para iniciar uma aquisição.</p>
+        <div id="acquisition-form">
+            <div class="form-group">
+                <label>Canais (0-7)</label>
+                <div id="channel-checkboxes"></div>
+            </div>
+            <div class="form-group">
+                <label>Sensores (pares)</label>
+                <div id="sensor-checkboxes"></div>
+            </div>
+            <div class="form-group">
+                <label>Sample rate (Hz)</label>
+                <input type="number" id="sample-rate" value="5000" min="100" max="51200" step="100">
+            </div>
+            <div class="form-group">
+                <label>Duração (s)</label>
+                <input type="number" id="duration" value="5" min="1" max="3600" step="1">
+            </div>
+            <div class="form-group">
+                <label>Nome do teste</label>
+                <input type="text" id="test-name" placeholder="opcional">
+            </div>
+            <div class="form-group">
+                <button id="btn-start">Start</button>
+                <button id="btn-stop" class="danger" disabled>Stop</button>
+            </div>
+        </div>
+        <p id="status-msg"></p>
+        <div id="plot-container"></div>
+        <h3>Valores atuais (preview)</h3>
+        <table id="values-table">
+            <thead><tr><th>Canal</th><th>Valor (V)</th></tr></thead>
+            <tbody></tbody>
+        </table>
+        <h3>Métricas (após aquisição)</h3>
+        <table id="metrics-table">
+            <thead><tr><th>Canal</th><th>RMS</th><th>DC</th><th>Peak</th><th>Clipping %</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="/static/js/acquisition.js"></script>
+</body>
+</html>

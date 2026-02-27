@@ -1,0 +1,15 @@
+{
+  "run_id": "20260227_192703_83290609",
+  "timestamp": "2026-02-27T19:27:04.379822Z",
+  "sample_rate_hz": 1000.0,
+  "duration_s": 1.0,
+  "channels": [
+    0
+  ],
+  "num_channels": 1,
+  "samples_per_channel": 1000,
+  "software_version": "0.1.0",
+  "test_name": "teste",
+  "binary_file": "20260227_192703_83290609.bin",
+  "format": "interleaved_float32"
+}
