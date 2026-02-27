@@ -32,8 +32,25 @@
             '<td>' + channels + '</td>' +
             '<td>' + fs + '</td>' +
             '<td>' + dur + '</td>' +
-            '<td><a href="' + binUrl + '" download>BIN</a> <a href="' + jsonUrl + '" download>JSON</a></td>';
+            '<td><a href="' + binUrl + '" download>BIN</a> <a href="' + jsonUrl + '" download>JSON</a> <a href="/analysis?run_id=' + encodeURIComponent(runId) + '">Analisar</a> <button type="button" class="danger btn-delete" data-run-id="' + runId.replace(/"/g, '&quot;') + '">Excluir</button></td>';
           tableBody.appendChild(tr);
+        });
+        tableBody.querySelectorAll('.btn-delete').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var id = this.getAttribute('data-run-id');
+            if (!id || !confirm('Excluir esta run? Os arquivos BIN e JSON serão removidos.')) return;
+            btn.disabled = true;
+            fetch(API + '/files/' + encodeURIComponent(id), { method: 'DELETE' })
+              .then(function (r) {
+                if (!r.ok) return r.json().then(function (j) { throw new Error(j.detail || r.statusText); });
+                return r.json();
+              })
+              .then(function () { loadFiles(); })
+              .catch(function (err) {
+                alert('Erro ao excluir: ' + err.message);
+                btn.disabled = false;
+              });
+          });
         });
         tableEl.style.display = 'table';
       })

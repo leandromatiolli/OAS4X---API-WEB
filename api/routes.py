@@ -5,8 +5,10 @@ import uuid
 from datetime import datetime
 from typing import Optional
 
+import numpy as np
+
 from fastapi import APIRouter, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel
 
 from acquisition.daq_runner import (
@@ -17,7 +19,14 @@ from acquisition.daq_runner import (
 )
 from config import SENSOR_CHANNELS
 from processing.metrics import compute_channel_metrics, downsample
-from storage.runs import list_runs, get_run_metadata, get_run_bin_path, read_run_bin
+from processing.analysis import (
+    downsample_for_plot,
+    fft_magnitude,
+    rms_sliding_window,
+    percentiles_per_channel,
+    MAX_PLOT_POINTS,
+)
+from storage.runs import list_runs, get_run_metadata, get_run_bin_path, read_run_bin, delete_run
 
 router = APIRouter(prefix="/api", tags=["api"])
 
@@ -124,6 +133,15 @@ async def file_download_json(run_id: str):
     return FileResponse(path, filename=path.name, media_type="application/json")
 
 
+@router.delete("/files/{run_id}")
+async def file_delete(run_id: str):
+    """Exclui a run (arquivos .bin e .json)."""
+    removed = delete_run(run_id)
+    if not removed:
+        raise HTTPException(404, "Run não encontrada ou já excluída")
+    return {"deleted": run_id}
+
+
 @router.get("/files/{run_id}/metrics")
 async def file_metrics(run_id: str):
     """Métricas (RMS, DC, peak, clipping) de uma run salva."""
@@ -133,3 +151,89 @@ async def file_metrics(run_id: str):
     data, meta = out
     metrics = compute_channel_metrics(data)
     return {"run_id": run_id, "meta": meta, "metrics": metrics}
+
+
+@router.get("/files/{run_id}/preview")
+async def file_preview(run_id: str, max_points: int = MAX_PLOT_POINTS):
+    """Dados downsampled para plot pós-aquisição (zoom/pan)."""
+    out = read_run_bin(run_id)
+    if not out:
+        raise HTTPException(404, "Run não encontrada")
+    data, meta = out
+    fs = meta["sample_rate_hz"]
+    down = downsample_for_plot(data, max_points)
+    n = down.shape[1]
+    t = [i / fs for i in range(n)]
+    return {
+        "run_id": run_id,
+        "meta": meta,
+        "t": t,
+        "channels": {str(ch): down[ch, :].tolist() for ch in range(down.shape[0])},
+    }
+
+
+@router.get("/files/{run_id}/fft")
+async def file_fft(run_id: str, channel: int = 0):
+    """FFT de um canal; retorna freq (Hz) e magnitude (dB)."""
+    out = read_run_bin(run_id)
+    if not out:
+        raise HTTPException(404, "Run não encontrada")
+    data, meta = out
+    fs = meta["sample_rate_hz"]
+    if channel < 0 or channel >= data.shape[0]:
+        raise HTTPException(400, "Canal inválido")
+    freq, mag = fft_magnitude(data[channel, :], fs, window=True, db=True)
+    return {
+        "run_id": run_id,
+        "channel": channel,
+        "sample_rate_hz": fs,
+        "freq_hz": freq.tolist(),
+        "magnitude_db": mag.tolist(),
+    }
+
+
+@router.get("/files/{run_id}/stats")
+async def file_stats(run_id: str, window_samples: int = 1000):
+    """Estatísticas: RMS global, RMS janela deslizante (média), P95, P99 por canal."""
+    out = read_run_bin(run_id)
+    if not out:
+        raise HTTPException(404, "Run não encontrada")
+    data, meta = out
+    metrics = compute_channel_metrics(data)
+    percentiles = percentiles_per_channel(data, [95, 99])
+    stats = []
+    for ch in range(data.shape[0]):
+        rms_win = rms_sliding_window(data[ch, :], window_samples)
+        stats.append({
+            "channel": ch,
+            "rms": metrics[ch]["rms"],
+            "rms_window_mean": float(np.mean(rms_win)),
+            "p95": percentiles[ch]["p95"],
+            "p99": percentiles[ch]["p99"],
+        })
+    return {"run_id": run_id, "meta": meta, "stats": stats}
+
+
+@router.get("/files/{run_id}/export/csv")
+async def file_export_csv(run_id: str, decimate: int = 1):
+    """Export CSV decimado (timestamp + canais). decimate=1 sem decimação; 10 = 1 a cada 10 amostras."""
+    out = read_run_bin(run_id)
+    if not out:
+        raise HTTPException(404, "Run não encontrada")
+    data, meta = out
+    if decimate < 1:
+        decimate = 1
+    fs = meta["sample_rate_hz"]
+    n = data.shape[1]
+    idx = np.arange(0, n, decimate)
+    t = idx / fs
+    rows = ["time_s," + ",".join(f"ch{c}" for c in range(data.shape[0]))]
+    for i, j in enumerate(idx):
+        row = f"{t[i]:.6f}," + ",".join(f"{data[c, j]:.6f}" for c in range(data.shape[0]))
+        rows.append(row)
+    csv_content = "\n".join(rows)
+    return Response(
+        content=csv_content,
+        media_type="text/csv",
+        headers={"Content-Disposition": f"attachment; filename={run_id}.csv"},
+    )

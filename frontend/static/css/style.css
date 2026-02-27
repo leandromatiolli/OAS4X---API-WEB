@@ -54,6 +54,9 @@ button {
 button:hover { opacity: 0.9; }
 button:disabled { opacity: 0.5; cursor: not-allowed; }
 button.danger { background: #b71c1c; }
+.btn-delete { margin-left: 0.5rem; }
+a.button-link, .button-link { display: inline-block; margin-left: 0.5rem; padding: 0.4rem 0.8rem; background: var(--accent); color: var(--link); border-radius: 4px; text-decoration: none; }
+a.button-link:hover { opacity: 0.9; }
 
 table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
 th, td { padding: 0.5rem; text-align: left; border-bottom: 1px solid var(--accent); }

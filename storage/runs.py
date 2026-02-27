@@ -111,6 +111,31 @@ def get_run_bin_path(run_id: str) -> Path | None:
     return p if p.exists() else None
 
 
+def delete_run(run_id: str) -> bool:
+    """
+    Exclui os arquivos .bin e .json da run.
+    Retorna True se pelo menos um arquivo foi removido; False se run não existir.
+    """
+    if not run_id or ".." in run_id or "/" in run_id:
+        return False
+    bin_path = RAW_DIR / f"{run_id}.bin"
+    json_path = RAW_DIR / f"{run_id}.json"
+    removed = False
+    if bin_path.exists():
+        try:
+            bin_path.unlink()
+            removed = True
+        except Exception:
+            pass
+    if json_path.exists():
+        try:
+            json_path.unlink()
+            removed = True
+        except Exception:
+            pass
+    return removed
+
+
 def read_run_bin(run_id: str) -> tuple[np.ndarray, dict] | None:
     """
     Lê BIN da run; retorna (data, meta) com data shape (num_channels, samples_per_channel)

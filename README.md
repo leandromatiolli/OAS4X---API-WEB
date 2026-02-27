@@ -67,7 +67,7 @@ O unit usa `User=pi` e `WorkingDirectory` no diretório do projeto; dados em `/d
 
 - `api/` – FastAPI, rotas REST, páginas (Acquisition, Files, Health).
 - `acquisition/` – Runner uldaq (1–8 canais, scan em thread).
-- `processing/` – Métricas (RMS, DC, peak, clipping), downsample.
+- `processing/` – Métricas (RMS, DC, peak, clipping), downsample; análise (FFT, RMS janela, P95/P99).
 - `storage/` – Escrita/leitura de runs (BIN+JSON em chunks + fsync), listagem.
 - `system/` – Health (uptime, CPU temp, RAM, disco, DAQ), logging, unit systemd.
 - `frontend/` – Templates Jinja2 e estáticos (CSS, JS).
@@ -78,9 +78,17 @@ O unit usa `User=pi` e `WorkingDirectory` no diretório do projeto; dados em `/d
 - **BIN:** `data/raw/<run_id>.bin` – amostras float32 intercaladas: ch0_s0, ch1_s0, …, chN_s0, ch0_s1, …
 - **JSON:** `data/raw/<run_id>.json` – metadados: `timestamp`, `sample_rate_hz`, `duration_s`, `channels`, `software_version`, `test_name`, `binary_file`, `format` ("interleaved_float32").
 
+## Etapa 3 (visualização e análise)
+
+- **Analysis:** Página **Analysis** (ou link "Analisar" em Files): plot pós-aquisição com **zoom/pan** (Plotly), downsample automático (até 10k pontos).
+- **FFT:** Por canal, magnitude em dB; seleção de canal na própria página.
+- **Estatísticas:** RMS global, RMS em janela deslizante (média), P95 e P99 por canal.
+- **Export CSV:** Dados decimados (fator configurável); download direto do navegador.
+
+API: `GET /api/files/{run_id}/preview`, `/fft?channel=`, `/stats`, `/export/csv?decimate=`.
+
 ## Próximas etapas (plano)
 
-- **Etapa 3:** Plot pós-aquisição (zoom/pan), FFT, estatísticas, export CSV.
 - **Etapa 4:** Calibração (fit elipse por sensor), Demod (fase, LPF, RMS).
 - **Etapa 5:** Trigger por RMS/nível, monitoramento contínuo, rotação de armazenamento, autenticação admin.
 - **Etapa 6:** Atualização remota (OTA-lite), rollback, README de deploy/update.

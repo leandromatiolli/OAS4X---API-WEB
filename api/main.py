@@ -79,6 +79,14 @@ async def files_page(request: Request):
     return templates.TemplateResponse("files.html", {"request": request})
 
 
+@app.get("/analysis", response_class=HTMLResponse)
+async def analysis_page(request: Request):
+    """Página Analysis - plot zoom/pan, FFT, estatísticas, export CSV (Etapa 3)."""
+    if templates is None:
+        return HTMLResponse("<h1>Analysis</h1><p>Templates not found.</p>")
+    return templates.TemplateResponse("analysis.html", {"request": request})
+
+
 @app.get("/health-page", response_class=HTMLResponse)
 async def health_page(request: Request):
     """Página Health - uptime, CPU temp, RAM, disco, status DAQ."""

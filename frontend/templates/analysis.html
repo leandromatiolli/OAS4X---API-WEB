@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis - OAS4X</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>OAS4X API-WEB</h1>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/acquisition">Acquisition</a>
+            <a href="/files">Files</a>
+            <a href="/health-page">Health</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Analysis</h2>
+        <p id="analysis-intro">Selecione uma run em <a href="/files">Files</a> e clique em Analisar, ou informe o run_id abaixo.</p>
+        <div class="form-group">
+            <label>Run ID</label>
+            <input type="text" id="run-id-input" placeholder="ex: 20250227_120000_abc12345">
+            <button type="button" id="btn-load">Carregar</button>
+        </div>
+        <p id="analysis-error" style="color: #f44336; display:none;"></p>
+        <div id="analysis-content" style="display:none;">
+            <h3>Series temporal (zoom/pan)</h3>
+            <div id="plot-time"></div>
+            <h3>FFT (canal)</h3>
+            <div class="form-group">
+                <label>Canal</label>
+                <select id="fft-channel"></select>
+            </div>
+            <div id="plot-fft"></div>
+            <h3>Estatísticas (RMS, P95, P99)</h3>
+            <table id="stats-table">
+                <thead><tr><th>Canal</th><th>RMS</th><th>RMS janela</th><th>P95</th><th>P99</th></tr></thead>
+                <tbody></tbody>
+            </table>
+            <h3>Export CSV</h3>
+            <div class="form-group">
+                <label>Decimar (1 = todas amostras)</label>
+                <input type="number" id="csv-decimate" value="10" min="1">
+                <a id="csv-download" href="#" download class="button-link">Download CSV</a>
+            </div>
+        </div>
+    </main>
+    <script src="/static/js/analysis.js"></script>
+</body>
+</html>
