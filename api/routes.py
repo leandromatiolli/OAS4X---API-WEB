@@ -110,13 +110,18 @@ async def acquisition_status():
         "error_message": state.error_message,
     }
     if state.result and state.result.success and state.result.data is not None:
-        # Preview: downsample para ~1000 pontos
         data = state.result.data
-        down = downsample(data, 1000)
-        # Enviar por canal: { channel: [t, values] }
         rate = state.result.rate_hz
+        samples_per_channel = data.shape[1]
+        duration_s = samples_per_channel / rate if rate else 0
+        # Abaixo de 2 s: todos os pontos no gráfico; acima: downsample para 10k
+        max_points = samples_per_channel if duration_s < 2.0 else 10_000
+        down = downsample(data, max_points)
         n = down.shape[1]
-        t = [i / rate for i in range(n)]
+        # Eixo de tempo pelos índices reais das amostras (0, step, 2*step, ...)
+        step = max(1, samples_per_channel // max_points)
+        indices = np.arange(0, samples_per_channel, step)[:n]
+        t = (indices.astype(np.float64) / rate).tolist()
         out["preview"] = {
             "t": t,
             "channels": {
@@ -176,15 +181,20 @@ async def file_metrics(run_id: str):
 
 @router.get("/files/{run_id}/preview")
 async def file_preview(run_id: str, max_points: int = MAX_PLOT_POINTS):
-    """Dados downsampled para plot pós-aquisição (zoom/pan)."""
+    """Dados downsampled para plot pós-aquisição (zoom/pan). Abaixo de 2 s: todos os pontos."""
     out = read_run_bin(run_id)
     if not out:
         raise HTTPException(404, "Run não encontrada")
     data, meta = out
     fs = meta["sample_rate_hz"]
-    down = downsample_for_plot(data, max_points)
+    n_total = data.shape[1]
+    duration_s = meta.get("duration_s") or (n_total / fs if fs else 0)
+    pts = n_total if duration_s < 2.0 else max_points
+    down = downsample_for_plot(data, pts)
     n = down.shape[1]
-    t = [i / fs for i in range(n)]
+    step = max(1, n_total // pts)
+    indices = np.arange(0, n_total, step)[:n]
+    t = (indices.astype(np.float64) / fs).tolist()
     return {
         "run_id": run_id,
         "meta": meta,
