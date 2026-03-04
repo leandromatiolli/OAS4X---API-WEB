@@ -1,7 +1,7 @@
 """
 Monitor em tempo real: scan contínuo de 2 canais (um sensor) para streaming via WebSocket.
 Usado para regular potência do laser (tensão diferencial dos dois canais do sensor).
-Taxa de atualização ao cliente: ~10 Hz (a cada 100 ms) com janela de 0,1 s downsampled para ~50 pontos.
+Taxa de atualização ao cliente: 10 Hz (a cada 100 ms) com 500 pontos por frame.
 """
 from __future__ import annotations
 
@@ -16,8 +16,8 @@ from config import SENSOR_CHANNELS
 # Parâmetros do monitor (estáveis para não sobrecarregar)
 MONITOR_SAMPLE_RATE_HZ = 2000
 MONITOR_BUFFER_S = 2
-MONITOR_UPDATE_INTERVAL_S = 0.1
-MONITOR_POINTS_PER_FRAME = 50
+MONITOR_UPDATE_INTERVAL_S = 0.1  # 10 Hz
+MONITOR_POINTS_PER_FRAME = 500
 
 _monitor_lock = threading.Lock()
 _monitor_thread: Optional[threading.Thread] = None
@@ -132,8 +132,8 @@ def _run_monitor_thread(sensor: str, range_id: str) -> None:
             _monitor_frame = {"error": str(e)}
         return
 
-    samples_per_update = int(MONITOR_SAMPLE_RATE_HZ * MONITOR_UPDATE_INTERVAL_S)
-    num_per_frame = samples_per_update * num_channels
+    samples_per_frame = MONITOR_POINTS_PER_FRAME
+    num_per_frame = samples_per_frame * num_channels
 
     while not _monitor_stop.is_set():
         try:

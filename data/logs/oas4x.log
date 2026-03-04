@@ -1,0 +1,445 @@
+{"ts": "2026-03-04T01:23:33.884055Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:23:33.884307Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:23:33.884473Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:23:33.884599Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:23:33.884717Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:23:33.884810Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:23:33.884942Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:23:34.685340Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:23:34.685941Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:23:34.986173Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:23:34.986416Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:23:35.025112Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:23:35.046779Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:23:35.046969Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:23:36.353123Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:23:36.353352Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:23:36.453489Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:23:36.454304Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:23:36.454405Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:23:36.454751Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:23:36.459028Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:23:36.460545Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:23:36.460975Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:23:36.461084Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:23:38.143245Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=50.0"}
+{"ts": "2026-03-04T01:23:38.143623Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:23:38.144079Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:23:38.144331Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:23:38.144622Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:23:38.144841Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:23:38.145108Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:23:38.945665Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:23:38.945987Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:23:39.213550Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:23:39.235582Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:23:39.235968Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:23:39.247083Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:23:39.247782Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:23:39.249437Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:23:39.249831Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:23:39.250152Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:23:39.250431Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:23:39.287169Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:23:39.288367Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:23:39.288721Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:23:39.289376Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:23:39.294833Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:23:39.296183Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:23:39.296397Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:23:39.296480Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:23:50.215563Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:23:50.215970Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:27:14.414546Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:27:14.414716Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:27:14.414830Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:27:14.414938Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:14.415069Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:27:14.415164Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:27:14.415251Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:27:15.215797Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:27:15.216508Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:27:15.502204Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:27:15.517904Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:27:15.518465Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:27:15.525564Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:27:15.525855Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:27:15.570966Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:27:15.571170Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:27:15.571281Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:15.571390Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:27:15.626944Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:27:15.627651Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:27:15.627876Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:27:15.628251Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:27:15.633944Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:27:15.635325Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:27:15.635708Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:27:15.635818Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:27:18.896472Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:18.896621Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:27:19.782518Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:27:19.782697Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:27:19.783344Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:27:19.785005Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:19.786023Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:27:19.786643Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:27:19.787039Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:27:20.588428Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:27:20.589346Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:27:20.845487Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:27:20.868168Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:27:20.868870Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:27:20.889505Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:27:20.892977Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:27:20.894822Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:27:20.895197Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:27:20.896180Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:20.896429Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:27:20.970107Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:27:20.970775Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:27:20.971098Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:27:20.971454Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:27:20.975391Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:27:20.976628Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:27:20.977136Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:27:20.977546Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:27:31.183775Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:27:31.183931Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:27:31.184011Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:27:31.184062Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:31.184126Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:27:31.184172Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:27:31.184226Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:27:31.984747Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:27:31.985285Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:27:32.269849Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:27:32.285875Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:27:32.286321Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:27:32.293328Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:27:32.293445Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:27:32.388120Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:27:32.388379Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:27:32.388570Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:32.388829Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:27:32.394600Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:27:32.395615Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:27:32.395978Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:27:32.397087Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:27:32.401289Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:27:32.402712Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:27:32.402999Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:27:32.403097Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:27:36.731407Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:36.731613Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:27:37.935569Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:27:37.935830Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:27:37.935985Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:27:37.936091Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:37.936197Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:27:37.936274Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:27:37.936363Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:27:38.736909Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:27:38.737458Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:27:38.993893Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:27:39.017626Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:27:39.017892Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:27:39.038367Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:27:39.038786Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:27:39.045979Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:27:39.046319Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:27:39.046443Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:39.046543Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:27:39.119407Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:27:39.120490Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:27:39.120872Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:27:39.121437Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:27:39.127554Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:27:39.128862Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:27:39.129158Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:27:39.129279Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:27:59.572876Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:27:59.573341Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:27:59.573701Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:28:13.118530Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:28:13.118679Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:28:13.118802Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:28:13.118879Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:28:13.118971Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:28:13.119052Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:28:13.119128Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:28:13.919437Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:28:13.920208Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:28:14.220332Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:28:14.220470Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:28:14.221912Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:28:14.243147Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:28:14.243252Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:28:14.322665Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] enviando primeiro frame ao cliente"}
+{"ts": "2026-03-04T01:28:15.963855Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:28:15.963973Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:28:16.051196Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:28:16.051998Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:28:16.052104Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:28:16.052468Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:28:16.055506Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:28:16.056625Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:28:16.056912Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:28:16.057042Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:28:17.381887Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=50.0"}
+{"ts": "2026-03-04T01:28:17.382061Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:28:17.382206Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:28:17.382317Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:28:17.382416Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:28:17.382494Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:28:17.382584Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:28:18.182976Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:28:18.183412Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:28:18.445680Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:28:18.467645Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:28:18.468111Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:28:18.483722Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:28:18.484224Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:28:18.485595Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:28:18.485846Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:28:18.486096Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:28:18.486373Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:28:18.518991Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:28:18.520221Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:28:18.520570Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:28:18.521118Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:28:18.526728Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:28:18.528375Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:28:18.529086Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:28:18.529623Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:28:33.657397Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:28:33.657555Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:32:15.828474Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:32:15.828870Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:32:15.829261Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:32:32.426130Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:32:32.426330Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:32:32.426473Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:32:32.426599Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:32:32.426724Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:32:32.426821Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:32:32.426919Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:32:33.227319Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:32:33.227888Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:32:33.528175Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:32:33.528362Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:32:33.550055Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:32:33.572515Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:32:33.573084Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:32:33.629112Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] enviando primeiro frame ao cliente"}
+{"ts": "2026-03-04T01:32:34.995117Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:32:34.995312Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:32:35.082874Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:32:35.083879Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:32:35.084144Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:32:35.084658Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:32:35.087932Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:32:35.089296Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:32:35.089854Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:32:35.090009Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:32:36.609647Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=50.0"}
+{"ts": "2026-03-04T01:32:36.609844Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:32:36.609976Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:32:36.610066Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:32:36.610160Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:32:36.610236Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:32:36.610322Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:32:37.410708Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:32:37.411215Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:32:37.677719Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:32:37.699351Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:32:37.699696Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:32:37.711607Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:32:37.711846Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:32:37.711988Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] enviando primeiro frame ao cliente"}
+{"ts": "2026-03-04T01:32:37.713046Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:32:37.713185Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:32:37.713283Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:32:37.713385Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:32:37.750550Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:32:37.751549Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:32:37.751878Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:32:37.752426Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:32:37.758258Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:32:37.760528Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:32:37.760787Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:32:37.760932Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:33:07.481829Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:33:07.481963Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:33:07.482043Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:33:07.482106Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:33:07.482173Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:33:07.482233Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:33:07.482295Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:33:08.282654Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:33:08.283054Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:33:08.557470Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:33:08.579340Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:33:08.581811Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:33:08.584722Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:33:08.584947Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:33:08.585100Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] enviando primeiro frame ao cliente"}
+{"ts": "2026-03-04T01:33:08.586522Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:33:08.586913Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:33:08.587280Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:33:08.587615Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:33:08.682976Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:33:08.683749Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:33:08.683872Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:33:08.684205Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:33:08.688070Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:33:08.689332Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:33:08.689759Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:33:08.689876Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:33:15.021240Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:33:15.021493Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:36:20.945358Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:36:20.945601Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:36:20.945747Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:36:38.983200Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:36:38.983327Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:36:38.983419Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:36:38.983522Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:36:38.983632Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:36:38.983701Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:36:38.983758Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:36:39.784140Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:36:39.784669Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:36:40.084984Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:36:40.085213Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:36:40.113907Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:36:40.136166Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:36:40.136461Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:36:40.186515Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] enviando primeiro frame ao cliente"}
+{"ts": "2026-03-04T01:36:45.641600Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:36:45.641770Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:36:45.668006Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:36:45.670043Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:36:45.670197Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:36:45.670810Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:36:45.675550Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:36:45.676608Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:36:45.676879Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:36:45.677050Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:36:48.563978Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=50.0"}
+{"ts": "2026-03-04T01:36:48.564141Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:36:48.564257Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:36:48.564338Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:36:48.564424Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:36:48.564497Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:36:48.564579Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:36:49.365010Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:36:49.365451Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:36:49.645708Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:36:49.665963Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:36:49.666180Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:36:49.667386Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:36:49.667683Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:36:49.716661Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] enviando primeiro frame ao cliente"}
+{"ts": "2026-03-04T01:36:49.768617Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:36:49.769406Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:36:49.769707Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:36:49.769911Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:36:49.819952Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:36:49.820792Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:36:49.820996Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:36:49.821538Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:36:49.825377Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:36:49.826891Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:36:49.827427Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:36:49.827802Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:36:58.230878Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:36:58.231043Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:37:00.836259Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=50.0"}
+{"ts": "2026-03-04T01:37:00.836410Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:37:00.836522Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:37:00.836613Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:37:00.836711Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:37:00.836792Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:37:00.836879Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:37:01.637290Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:37:01.637737Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.05"}
+{"ts": "2026-03-04T01:37:01.901637Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:37:01.923743Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:37:01.924206Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:37:01.938185Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:37:01.938481Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:37:01.938644Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] enviando primeiro frame ao cliente"}
+{"ts": "2026-03-04T01:37:01.939902Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:37:01.940041Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:37:01.940147Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:37:01.940262Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:37:01.975510Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:37:01.976318Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:37:01.976465Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:37:01.976754Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:37:01.982184Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:37:01.983678Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:37:01.985943Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:37:01.986425Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:37:04.391727Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:37:04.391919Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:37:06.070433Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=200.0"}
+{"ts": "2026-03-04T01:37:06.070772Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.2"}
+{"ts": "2026-03-04T01:37:06.071048Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:37:06.071304Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:37:06.071556Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:37:06.071813Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:37:06.072097Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:37:06.872558Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:37:06.873183Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.2"}
+{"ts": "2026-03-04T01:37:07.149515Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:37:07.170895Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:37:07.171108Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:37:07.173233Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:37:07.176080Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:37:07.176225Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] enviando primeiro frame ao cliente"}
+{"ts": "2026-03-04T01:37:07.178475Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:37:07.178626Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:37:07.178746Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:37:07.178860Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:37:07.372333Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:37:07.373172Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:37:07.373480Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:37:07.374048Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:37:07.378170Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:37:07.381168Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:37:07.381621Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:37:07.381919Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:37:09.902770Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:37:09.902928Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:37:22.984512Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor sensor=S1 points=50 interval_ms=100.0"}
+{"ts": "2026-03-04T01:37:22.984696Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor chamado sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:37:22.984855Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] chamando stop_monitor"}
+{"ts": "2026-03-04T01:37:22.985023Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:37:22.985158Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}
+{"ts": "2026-03-04T01:37:22.985244Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor retornou"}
+{"ts": "2026-03-04T01:37:22.985342Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma cleanup thread ou já terminou"}
+{"ts": "2026-03-04T01:37:23.785716Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] iniciando nova thread do monitor"}
+{"ts": "2026-03-04T01:37:23.786248Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread iniciada sensor=S1 points=50 interval_s=0.1"}
+{"ts": "2026-03-04T01:37:24.045624Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect attempt=1"}
+{"ts": "2026-03-04T01:37:24.071647Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] connect e a_in_scan ok"}
+{"ts": "2026-03-04T01:37:24.073180Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] entrando no loop de frames"}
+{"ts": "2026-03-04T01:37:24.086495Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] start_monitor ok, thread rodando"}
+{"ts": "2026-03-04T01:37:24.086700Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket start_monitor retornou ok=True msg=Monitor iniciado."}
+{"ts": "2026-03-04T01:37:24.087206Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] enviando primeiro frame ao cliente"}
+{"ts": "2026-03-04T01:37:24.088401Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket desconectado"}
+{"ts": "2026-03-04T01:37:24.088547Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:37:24.088647Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:37:24.088750Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] join na thread do monitor (timeout 3s)"}
+{"ts": "2026-03-04T01:37:24.174514Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] saiu do loop, iniciando cleanup em background"}
+{"ts": "2026-03-04T01:37:24.175043Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread iniciada"}
+{"ts": "2026-03-04T01:37:24.175496Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread principal terminando (cleanup em background)"}
+{"ts": "2026-03-04T01:37:24.175913Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] thread do monitor terminou"}
+{"ts": "2026-03-04T01:37:24.179479Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup scan_stop ok"}
+{"ts": "2026-03-04T01:37:24.181629Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup disconnect ok"}
+{"ts": "2026-03-04T01:37:24.182129Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup release ok"}
+{"ts": "2026-03-04T01:37:24.182325Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] cleanup thread terminada"}
+{"ts": "2026-03-04T01:39:53.866714Z", "level": "INFO", "logger": "api.routes", "msg": "[MONITOR] WebSocket finally, chamando stop_monitor"}
+{"ts": "2026-03-04T01:39:53.866872Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] stop_monitor chamado"}
+{"ts": "2026-03-04T01:39:53.866985Z", "level": "INFO", "logger": "acquisition.monitor", "msg": "[MONITOR] nenhuma thread do monitor"}

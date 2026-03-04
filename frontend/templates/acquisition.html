@@ -33,7 +33,7 @@
             </div>
             <div class="form-group">
                 <label>Sample rate (Hz)</label>
-                <input type="number" id="sample-rate" value="5000" min="100" max="51200" step="100">
+                <input type="number" id="sample-rate" value="200000" min="100" max="512000" step="1000">
             </div>
             <div class="form-group">
                 <label>Duração (s)</label>
@@ -43,9 +43,9 @@
                 <label>Faixa de tensão (ADC)</label>
                 <select id="range-select">
                     <option value="BIP10VOLTS">±10 V</option>
-                    <option value="BIP5VOLTS" selected>±5 V</option>
+                    <option value="BIP5VOLTS">±5 V</option>
                     <option value="UNI10VOLTS">0 a 10 V</option>
-                    <option value="UNI5VOLTS">0 a 5 V</option>
+                    <option value="UNI5VOLTS" selected>0 a 5 V</option>
                 </select>
             </div>
             <div class="form-group">

@@ -43,10 +43,10 @@ router = APIRouter(prefix="/api", tags=["api"])
 class AcquisitionStartBody(BaseModel):
     channels: Optional[list[int]] = None
     sensors: Optional[list[str]] = None
-    sample_rate_hz: float = 5000
+    sample_rate_hz: float = 200000
     duration_s: float = 5
     test_name: str = ""
-    range_id: Optional[str] = "BIP5VOLTS"
+    range_id: Optional[str] = "UNI5VOLTS"
 
 
 def _channels_from_sensors(sensors: list[str]) -> list[int]:
@@ -69,7 +69,7 @@ async def acquisition_start(body: AcquisitionStartBody):
     ch = sorted(set(c for c in ch if 0 <= c <= 7))
     if not ch:
         raise HTTPException(400, "Informe ao menos um canal ou sensor (S1-S4)")
-    range_id = body.range_id or "BIP5VOLTS"
+    range_id = body.range_id or "UNI5VOLTS"
     if range_id not in VALID_RANGE_IDS:
         raise HTTPException(400, f"range_id inválido. Use um de: {sorted(VALID_RANGE_IDS)}")
     state = get_state()
