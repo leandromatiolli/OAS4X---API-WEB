@@ -90,10 +90,6 @@ def _set_state(status: AcquisitionStatus, run_id: Optional[str] = None,
             _state.error_message = error_message
 
 
-# Identificadores de faixa de tensão (uldaq Range) para uso na API e frontend
-RANGE_IDS = ["BIP10VOLTS", "BIP5VOLTS", "BIP2PT5VOLTS", "BIP1PT25VOLTS", "BIP1VOLTS", "BIPPT5VOLTS"]
-
-
 def discover_device():
     """Retorna (True, descriptor) se encontrar USB-1808X, senão (False, msg)."""
     ok, ul = _get_uldaq()
@@ -117,6 +113,7 @@ def run_acquisition(
     """
     Executa uma aquisição finita em thread.
     channels: lista de canais 0-7 (ex.: [0,1] ou [0,1,2,3,4,5,6,7])
+    range_id: faixa de tensão ADC (BIP10VOLTS, BIP5VOLTS, UNI10VOLTS, UNI5VOLTS).
     Escreve resultado em _state.result; dados em shape (num_channels, samples_per_channel).
     """
     def _run() -> None:
@@ -127,19 +124,17 @@ def run_acquisition(
         (get_daq_device_inventory, DaqDevice, InterfaceType, AiInputMode, Range,
          create_float_buffer, ScanOption, AInScanFlag, WaitType) = ul
 
-        range_map = {
-            "BIP10VOLTS": Range.BIP10VOLTS,
-            "BIP5VOLTS": Range.BIP5VOLTS,
-            "BIP2PT5VOLTS": Range.BIP2PT5VOLTS,
-            "BIP1PT25VOLTS": Range.BIP1PT25VOLTS,
-            "BIP1VOLTS": Range.BIP1VOLTS,
-            "BIPPT5VOLTS": Range.BIPPT5VOLTS,
-        }
-        range_uldaq = range_map.get(range_id, Range.BIP5VOLTS)
+        from acquisition.ranges import get_range_enum
+        range_enum = get_range_enum(range_id)
 
         if not channels:
             _set_state(AcquisitionStatus.ERROR, error_message="Nenhum canal selecionado")
             return
+        try:
+            from acquisition.monitor import stop_monitor
+            stop_monitor()
+        except Exception:
+            pass
 
         devices = get_daq_device_inventory(InterfaceType.ANY)
         if not devices:
@@ -169,7 +164,7 @@ def run_acquisition(
                 low_channel,
                 high_channel,
                 AiInputMode.SINGLE_ENDED,
-                range_uldaq,
+                range_enum,
                 samples_per_channel,
                 sample_rate_hz,
                 ScanOption.DEFAULTIO,
@@ -209,7 +204,7 @@ def run_acquisition(
                 channels=channels_scanned,
                 test_name=test_name,
                 run_id=run_id,
-                range_id=range_id,
+                analog_range_id=range_id,
             )
         except Exception:
             pass

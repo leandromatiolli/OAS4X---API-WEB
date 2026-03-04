@@ -95,6 +95,14 @@ async def health_page(request: Request):
     return templates.TemplateResponse("health.html", {"request": request})
 
 
+@app.get("/monitor", response_class=HTMLResponse)
+async def monitor_page(request: Request):
+    """Página Monitor - tensão em tempo real por sensor (CH0, CH1 e diferencial)."""
+    if templates is None:
+        return HTMLResponse("<h1>Monitor</h1><p>Templates not found.</p>")
+    return templates.TemplateResponse("monitor.html", {"request": request})
+
+
 @app.get("/health")
 async def health():
     """Health check (Etapa 2): uptime, CPU temp, RAM, disco, status USB/DAQ."""

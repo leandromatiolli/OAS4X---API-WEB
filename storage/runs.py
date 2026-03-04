@@ -19,16 +19,6 @@ from config import RAW_DIR, SOFTWARE_VERSION
 # Tamanho do chunk para gravar BIN (em amostras float32) - evita pico de I/O
 _CHUNK_FLOATS = 256 * 1024
 
-# Mapa range_id (uldaq) -> tensão máxima em volts (±) para metadado e clipping
-RANGE_ID_TO_VOLTS: dict[str, float] = {
-    "BIP10VOLTS": 10.0,
-    "BIP5VOLTS": 5.0,
-    "BIP2PT5VOLTS": 2.5,
-    "BIP1PT25VOLTS": 1.25,
-    "BIP1VOLTS": 1.0,
-    "BIPPT5VOLTS": 0.5,
-}
-
 
 def _run_base(run_id: str) -> Path:
     return RAW_DIR / run_id
@@ -41,7 +31,7 @@ def write_run(
     channels: List[int],
     test_name: str = "",
     run_id: Optional[str] = None,
-    range_id: str = "",
+    analog_range_id: Optional[str] = None,
 ) -> str:
     """
     Escreve uma run em /data/raw/<run_id>.<bin|json>.
@@ -70,7 +60,6 @@ def write_run(
         f.flush()
         os.fsync(f.fileno())
 
-    range_volts: Optional[float] = RANGE_ID_TO_VOLTS.get(range_id) if range_id else None
     meta = {
         "run_id": run_id,
         "timestamp": datetime.utcnow().isoformat() + "Z",
@@ -84,10 +73,8 @@ def write_run(
         "binary_file": bin_path.name,
         "format": "interleaved_float32",
     }
-    if range_id:
-        meta["range_id"] = range_id
-    if range_volts is not None:
-        meta["range_volts"] = range_volts
+    if analog_range_id is not None:
+        meta["range"] = analog_range_id
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=2, ensure_ascii=False)
         f.flush()

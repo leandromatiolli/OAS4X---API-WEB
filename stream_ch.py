@@ -100,7 +100,7 @@ def main():
             RANGE,
             samples_per_channel,
             TAXA_HZ,
-            ScanOption.CONTINUOUS | ScanOption.BACKGROUND,
+            ScanOption.CONTINUOUS,
             AInScanFlag.DEFAULT,
             buffer,
         )

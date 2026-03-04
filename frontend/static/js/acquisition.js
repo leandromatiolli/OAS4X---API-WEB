@@ -68,7 +68,7 @@
     const sampleRate = parseInt(document.getElementById('sample-rate').value, 10);
     const duration = parseInt(document.getElementById('duration').value, 10);
     const testName = document.getElementById('test-name').value.trim();
-    const rangeId = document.getElementById('range').value;
+    const rangeId = document.getElementById('range-select').value || 'BIP5VOLTS';
 
     btnStart.disabled = true;
     btnStop.disabled = false;
