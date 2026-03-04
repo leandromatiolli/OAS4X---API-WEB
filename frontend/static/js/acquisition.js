@@ -68,6 +68,7 @@
     const sampleRate = parseInt(document.getElementById('sample-rate').value, 10);
     const duration = parseInt(document.getElementById('duration').value, 10);
     const testName = document.getElementById('test-name').value.trim();
+    const rangeId = document.getElementById('range').value;
 
     btnStart.disabled = true;
     btnStop.disabled = false;
@@ -81,7 +82,8 @@
         sensors: sensors.length ? sensors : undefined,
         sample_rate_hz: sampleRate,
         duration_s: duration,
-        test_name: testName
+        test_name: testName,
+        range_id: rangeId
       })
     })
       .then(function (r) {

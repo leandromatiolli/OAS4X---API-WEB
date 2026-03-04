@@ -43,6 +43,17 @@
                 <input type="text" id="test-name" placeholder="opcional">
             </div>
             <div class="form-group">
+                <label>Faixa de tensão (ADC)</label>
+                <select id="range">
+                    <option value="BIP10VOLTS">±10 V</option>
+                    <option value="BIP5VOLTS" selected>±5 V</option>
+                    <option value="BIP2PT5VOLTS">±2,5 V</option>
+                    <option value="BIP1PT25VOLTS">±1,25 V</option>
+                    <option value="BIP1VOLTS">±1 V</option>
+                    <option value="BIPPT5VOLTS">±0,5 V</option>
+                </select>
+            </div>
+            <div class="form-group">
                 <button id="btn-start">Start</button>
                 <button id="btn-stop" class="danger" disabled>Stop</button>
             </div>

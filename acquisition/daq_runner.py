@@ -90,6 +90,10 @@ def _set_state(status: AcquisitionStatus, run_id: Optional[str] = None,
             _state.error_message = error_message
 
 
+# Identificadores de faixa de tensão (uldaq Range) para uso na API e frontend
+RANGE_IDS = ["BIP10VOLTS", "BIP5VOLTS", "BIP2PT5VOLTS", "BIP1PT25VOLTS", "BIP1VOLTS", "BIPPT5VOLTS"]
+
+
 def discover_device():
     """Retorna (True, descriptor) se encontrar USB-1808X, senão (False, msg)."""
     ok, ul = _get_uldaq()
@@ -108,6 +112,7 @@ def run_acquisition(
     duration_s: float,
     run_id: str,
     test_name: str = "",
+    range_id: str = "BIP5VOLTS",
 ) -> None:
     """
     Executa uma aquisição finita em thread.
@@ -121,6 +126,16 @@ def run_acquisition(
             return
         (get_daq_device_inventory, DaqDevice, InterfaceType, AiInputMode, Range,
          create_float_buffer, ScanOption, AInScanFlag, WaitType) = ul
+
+        range_map = {
+            "BIP10VOLTS": Range.BIP10VOLTS,
+            "BIP5VOLTS": Range.BIP5VOLTS,
+            "BIP2PT5VOLTS": Range.BIP2PT5VOLTS,
+            "BIP1PT25VOLTS": Range.BIP1PT25VOLTS,
+            "BIP1VOLTS": Range.BIP1VOLTS,
+            "BIPPT5VOLTS": Range.BIPPT5VOLTS,
+        }
+        range_uldaq = range_map.get(range_id, Range.BIP5VOLTS)
 
         if not channels:
             _set_state(AcquisitionStatus.ERROR, error_message="Nenhum canal selecionado")
@@ -154,7 +169,7 @@ def run_acquisition(
                 low_channel,
                 high_channel,
                 AiInputMode.SINGLE_ENDED,
-                Range.BIP5VOLTS,
+                range_uldaq,
                 samples_per_channel,
                 sample_rate_hz,
                 ScanOption.DEFAULTIO,
@@ -194,6 +209,7 @@ def run_acquisition(
                 channels=channels_scanned,
                 test_name=test_name,
                 run_id=run_id,
+                range_id=range_id,
             )
         except Exception:
             pass

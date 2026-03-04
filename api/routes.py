@@ -37,6 +37,7 @@ class AcquisitionStartBody(BaseModel):
     sample_rate_hz: float = 5000
     duration_s: float = 5
     test_name: str = ""
+    range_id: Optional[str] = "BIP5VOLTS"
 
 
 def _channels_from_sensors(sensors: list[str]) -> list[int]:
@@ -69,6 +70,7 @@ async def acquisition_start(body: AcquisitionStartBody):
         duration_s=body.duration_s,
         run_id=run_id,
         test_name=body.test_name,
+        range_id=body.range_id or "BIP5VOLTS",
     )
     return {"run_id": run_id, "status": "started", "channels": ch}
 
