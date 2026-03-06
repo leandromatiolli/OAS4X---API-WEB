@@ -1,119 +1,1069 @@
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829411.7816215}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829412.5904}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829435.0738974}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829435.5743504}
-{"sessionId": "6cbc7e", "message": "start_spectrum called", "data": {"sensor": "S1", "interval_s": 0.5}, "hypothesisId": "H5", "timestamp": 1772829437.398905}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829437.399387}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829437.900924}
-{"sessionId": "6cbc7e", "message": "start_spectrum after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829439.5015354}
-{"sessionId": "6cbc7e", "message": "Spectrum thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829439.8109243}
-{"sessionId": "6cbc7e", "message": "start_spectrum after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829440.0022194}
-{"sessionId": "6cbc7e", "message": "start_spectrum returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829440.0027323}
-{"sessionId": "6cbc7e", "message": "spectrum_stream: start_spectrum result", "data": {"ok": true, "msg": "Espectro iniciado."}, "hypothesisId": "H5", "timestamp": 1772829440.0028198}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829441.9637964}
-{"sessionId": "6cbc7e", "message": "Spectrum thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829441.9704194}
-{"sessionId": "6cbc7e", "message": "stop_spectrum after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829441.9714742}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829442.5842283}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829443.0846546}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829456.3766925}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829456.99316}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829457.4935987}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829459.2952318}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829459.896771}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829460.4984624}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829460.9988582}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829462.8002076}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829463.401882}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829463.902344}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829465.7047002}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829466.2051687}
-{"sessionId": "6cbc7e", "message": "start_monitor called", "data": {"sensor": "S1"}, "hypothesisId": "H5", "timestamp": 1772829468.9770901}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829468.9773333}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829469.5777261}
-{"sessionId": "6cbc7e", "message": "start_monitor after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829471.0783749}
-{"sessionId": "6cbc7e", "message": "Monitor thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829471.3588004}
-{"sessionId": "6cbc7e", "message": "start_monitor after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829471.3794217}
-{"sessionId": "6cbc7e", "message": "start_monitor returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829471.3796399}
-{"sessionId": "6cbc7e", "message": "monitor_stream: start_monitor result", "data": {"ok": true, "msg": "Monitor iniciado."}, "hypothesisId": "H5", "timestamp": 1772829471.3797402}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829498.1948452}
-{"sessionId": "6cbc7e", "message": "Monitor thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829498.2185664}
-{"sessionId": "6cbc7e", "message": "stop_monitor after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829498.2190275}
-{"sessionId": "6cbc7e", "message": "start_monitor called", "data": {"sensor": "S1"}, "hypothesisId": "H5", "timestamp": 1772829502.0338821}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829502.0340664}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829502.6343594}
-{"sessionId": "6cbc7e", "message": "start_monitor after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829504.134845}
-{"sessionId": "6cbc7e", "message": "Monitor thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829504.418863}
-{"sessionId": "6cbc7e", "message": "start_monitor after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829504.4356935}
-{"sessionId": "6cbc7e", "message": "start_monitor returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829504.435975}
-{"sessionId": "6cbc7e", "message": "monitor_stream: start_monitor result", "data": {"ok": true, "msg": "Monitor iniciado."}, "hypothesisId": "H5", "timestamp": 1772829504.436057}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829509.204884}
-{"sessionId": "6cbc7e", "message": "Monitor thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829509.2917843}
-{"sessionId": "6cbc7e", "message": "stop_monitor after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829509.2924492}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829511.815396}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829512.3158264}
-{"sessionId": "6cbc7e", "message": "start_spectrum called", "data": {"sensor": "S1", "interval_s": 0.5}, "hypothesisId": "H5", "timestamp": 1772829514.1432922}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829514.1437504}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829514.644104}
-{"sessionId": "6cbc7e", "message": "start_spectrum after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829516.24521}
-{"sessionId": "6cbc7e", "message": "Spectrum thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829516.510845}
-{"sessionId": "6cbc7e", "message": "start_spectrum after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829516.7464204}
-{"sessionId": "6cbc7e", "message": "start_spectrum returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829516.746604}
-{"sessionId": "6cbc7e", "message": "spectrum_stream: start_spectrum result", "data": {"ok": true, "msg": "Espectro iniciado."}, "hypothesisId": "H5", "timestamp": 1772829516.746658}
-{"sessionId": "6cbc7e", "message": "spectrum_stream finally", "data": {"conn_id": 140734537442768, "owner": 140734537423040, "will_stop": false}, "hypothesisId": "H6", "timestamp": 1772829517.1431372}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829543.1197648}
-{"sessionId": "6cbc7e", "message": "Spectrum thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829543.5929575}
-{"sessionId": "6cbc7e", "message": "stop_spectrum after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829543.5942006}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829544.207511}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829544.7080657}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829735.4081924}
-{"sessionId": "6cbc7e", "message": "spectrum_stream finally", "data": {"conn_id": 140734537423040, "owner": 140734537423040, "will_stop": true}, "hypothesisId": "H6", "timestamp": 1772829736.217308}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829736.217473}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829754.0045457}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829754.5055408}
-{"sessionId": "6cbc7e", "message": "start_spectrum called", "data": {"sensor": "S1", "interval_s": 0.1}, "hypothesisId": "H5", "timestamp": 1772829756.333346}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829756.3335657}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829756.8346996}
-{"sessionId": "6cbc7e", "message": "start_spectrum after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829758.435134}
-{"sessionId": "6cbc7e", "message": "Spectrum thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829758.7510376}
-{"sessionId": "6cbc7e", "message": "start_spectrum after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829758.9357796}
-{"sessionId": "6cbc7e", "message": "start_spectrum returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829758.935959}
-{"sessionId": "6cbc7e", "message": "spectrum_stream: start_spectrum result", "data": {"ok": true, "msg": "Espectro iniciado."}, "hypothesisId": "H5", "timestamp": 1772829758.9360385}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829761.920026}
-{"sessionId": "6cbc7e", "message": "Spectrum thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829761.958244}
-{"sessionId": "6cbc7e", "message": "stop_spectrum after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829761.9586854}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829762.5723832}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829763.0727928}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829764.8752518}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829765.3756518}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829767.1779675}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829767.678405}
-{"sessionId": "6cbc7e", "message": "start_spectrum called", "data": {"sensor": "S1", "interval_s": 0.1}, "hypothesisId": "H5", "timestamp": 1772829769.5031202}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829769.5035267}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829770.00389}
-{"sessionId": "6cbc7e", "message": "start_spectrum after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829771.6044424}
-{"sessionId": "6cbc7e", "message": "Spectrum thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829771.8708549}
-{"sessionId": "6cbc7e", "message": "start_spectrum after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829772.1063678}
-{"sessionId": "6cbc7e", "message": "start_spectrum returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829772.1065476}
-{"sessionId": "6cbc7e", "message": "spectrum_stream: start_spectrum result", "data": {"ok": true, "msg": "Espectro iniciado."}, "hypothesisId": "H5", "timestamp": 1772829772.106617}
-{"sessionId": "6cbc7e", "message": "spectrum_stream finally", "data": {"conn_id": 140734170173904, "owner": 140734170413696, "will_stop": false}, "hypothesisId": "H6", "timestamp": 1772829772.1275432}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829776.6494462}
-{"sessionId": "6cbc7e", "message": "Spectrum thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829776.6747427}
-{"sessionId": "6cbc7e", "message": "stop_spectrum after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829776.675413}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829777.2773132}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829777.7776752}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829779.5796893}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829780.0803227}
-{"sessionId": "6cbc7e", "message": "start_monitor called", "data": {"sensor": "S1"}, "hypothesisId": "H5", "timestamp": 1772829782.9428878}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829782.9431052}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829783.543439}
-{"sessionId": "6cbc7e", "message": "start_monitor after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829785.043959}
-{"sessionId": "6cbc7e", "message": "Monitor thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829785.3107827}
-{"sessionId": "6cbc7e", "message": "start_monitor after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829785.3454745}
-{"sessionId": "6cbc7e", "message": "start_monitor returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829785.3460157}
-{"sessionId": "6cbc7e", "message": "monitor_stream: start_monitor result", "data": {"ok": true, "msg": "Monitor iniciado."}, "hypothesisId": "H5", "timestamp": 1772829785.3461754}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829788.8154566}
-{"sessionId": "6cbc7e", "message": "Monitor thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829788.8607903}
-{"sessionId": "6cbc7e", "message": "stop_monitor after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829788.8610666}
-{"sessionId": "6cbc7e", "message": "spectrum_stream finally", "data": {"conn_id": 140734170413696, "owner": 140734170413696, "will_stop": true}, "hypothesisId": "H6", "timestamp": 1772829970.6815767}
-{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829970.6817672}
-{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829971.289859}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833569633,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833569643,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833569654,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833570639,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833572076,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"routes.py:spectrum_stream","message":"first_frame_sent","data":{"keys":list(frame.keys())},"timestamp":1772833572144,"hypothesisId":"C"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833572365,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833572658,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833572948,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833573242,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833573535,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833573826,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833574121,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833574416,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833574710,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833575003,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833575292,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833575586,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833575877,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833576170,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833576463,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833576788,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833577101,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833577497,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833577817,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833578171,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833588247,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833588258,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833588268,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833589250,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833590263,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833591277,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833592288,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833593300,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833594257,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"routes.py:spectrum_stream","message":"first_frame_sent","data":{"keys":list(frame.keys())},"timestamp":1772833594326,"hypothesisId":"C"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833595151,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833596049,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833596931,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833597827,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833598707,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833599594,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833600485,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833601385,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833602266,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833603147,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833604028,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833604918,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833605809,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833606714,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833607593,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833608478,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833609366,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833610260,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833611140,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833612027,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833612918,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833613826,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833614710,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833615600,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833616497,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833617394,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833618275,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833619169,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833620051,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833620931,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833621808,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833622692,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833623568,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833624553,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833625540,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833626430,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833627316,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833628223,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833629106,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833629995,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833630886,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833631780,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833632667,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833633555,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833634436,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833635320,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833636217,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833637094,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833647156,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833647166,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833647177,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833647205,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833647314,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"routes.py:spectrum_stream","message":"first_frame_sent","data":{"keys":list(frame.keys())},"timestamp":1772833647403,"hypothesisId":"C"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833647424,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833647531,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833647637,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833647742,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833647849,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833647956,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833648062,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833648169,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833648274,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833648381,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833648488,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833648594,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833648700,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833648806,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833648912,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649021,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649127,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649234,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649340,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649448,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649555,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649661,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649767,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649873,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833649979,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833650086,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833650193,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833650299,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833650405,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833650512,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833650618,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833650725,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833650831,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833650937,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833651044,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833651152,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833651258,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833651364,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833651470,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833651576,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833651683,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833651789,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833651896,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833652001,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833652113,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833652226,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833652333,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833652440,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833652552,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833652683,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833652794,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833652901,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653007,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653113,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653220,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653326,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653433,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653539,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653653,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653759,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653865,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833653971,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833654077,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833654185,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833654291,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833654398,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833654504,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833654611,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833654717,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833654823,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833654930,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655036,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655143,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655249,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655356,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655463,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655569,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655676,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655784,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655891,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833655998,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833656104,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833656211,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833656318,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833656425,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833656532,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833656638,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833656744,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833656851,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833656958,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833657065,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833657171,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833657278,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833657378,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833657385,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833657492,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833657608,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833657718,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833657825,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833657934,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833658042,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833658150,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833658258,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833658367,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833658475,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833658583,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833658692,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833658800,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833658908,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659016,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659125,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659233,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659342,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659449,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659557,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659666,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659773,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659882,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833659991,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833660099,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833660207,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833660315,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833660423,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833660530,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833660642,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833660754,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833660866,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833660996,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833661103,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833661209,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833661315,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833661423,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833661529,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833661636,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833661742,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833661849,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833661956,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833662063,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833662169,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833662275,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833662381,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833662489,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833662596,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833662702,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833662808,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833662915,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663022,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663129,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663235,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663340,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663447,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663554,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663661,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663768,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663874,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833663980,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833664089,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833664196,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833664302,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833664408,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833664514,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833664622,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833664729,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833664835,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833664941,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833665048,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833665157,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833665264,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833665370,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833665476,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833665584,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833665694,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833665802,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833665911,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666021,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666129,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666238,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666346,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666455,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666563,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666670,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666779,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666890,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833666998,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833667107,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833667215,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833667322,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833667431,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833667539,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833667647,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833667757,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833667864,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833667974,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833668082,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833668183,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833668190,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833668299,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833668407,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833668515,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833668625,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833668733,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833668842,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833668950,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833669058,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833669167,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833669275,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833669385,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833669499,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833669611,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833669723,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833669835,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833669948,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833670058,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833670165,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833670272,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833670378,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833670485,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833670592,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833670698,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833670805,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833670910,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671017,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671125,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671231,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671338,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671443,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671550,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671657,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671763,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671870,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833671975,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833672082,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833672189,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833672296,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833672402,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833672509,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833672615,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833672723,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833672829,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833672936,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833673042,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833673148,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833673256,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833673362,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833673470,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833673575,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833673682,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833673789,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833673896,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674003,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674109,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674216,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674323,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674429,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674539,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674647,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674756,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674872,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833674980,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833675089,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833675197,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833675305,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833675414,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833675522,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833675630,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833675739,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833675847,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833675955,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833676063,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833676171,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833676280,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833676390,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833676498,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833676606,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833676714,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833676823,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833676933,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833677040,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833677149,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833677258,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833677366,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833677475,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833677583,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833677691,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833677799,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833677907,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678020,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678132,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678243,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678351,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678465,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678572,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678678,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678785,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678892,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833678992,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833678999,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833679105,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833679211,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833679318,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833679425,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833679531,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833679638,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833679744,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833679851,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833679959,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833680065,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833680172,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833680278,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833680385,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833680492,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833680598,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833680705,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833680810,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833680916,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681025,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681131,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681237,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681343,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681450,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681557,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681664,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681770,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681876,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833681983,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833682090,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833682198,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833682304,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833682410,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833682517,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833682624,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833682730,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833682837,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833682943,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833683051,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833683160,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833683268,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833683376,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833683486,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833683595,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833683703,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833683811,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833683920,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833684027,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833684136,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833684245,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833684354,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833684462,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833684570,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833684679,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833684788,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833684897,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685012,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685120,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685229,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685337,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685449,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685557,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685664,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685769,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685876,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833685983,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833686090,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833686197,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833686302,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833686409,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833686516,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833686622,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833686729,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833686835,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833686942,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833687048,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833687154,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833687261,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833687367,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833687474,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833687580,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833687686,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833687793,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833687899,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688006,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688112,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688218,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688325,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688432,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688539,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688644,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688751,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688857,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833688964,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833689071,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833689177,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833689283,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833689394,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833689500,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833689607,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833689707,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833689713,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833689819,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833689926,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833690034,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833690143,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833690254,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833690370,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833690478,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833690587,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833690696,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833690805,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833690912,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691019,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691126,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691232,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691339,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691444,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691551,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691658,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691765,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691871,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833691977,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833692084,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833692191,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833692297,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833692404,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833692510,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833692617,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833692724,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833692830,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833692937,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833693043,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833693149,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833693256,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833693363,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833693471,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833693579,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833693691,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833693799,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833693907,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694016,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694122,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694229,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694335,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694441,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694547,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694654,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694760,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694866,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833694973,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833695079,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833695186,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833695292,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833695400,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833695507,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833695613,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833695720,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833695826,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833695933,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833696042,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833696152,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833696260,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833696369,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833696478,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833696586,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833696695,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833696803,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833696912,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833697023,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833707041,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833707051,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833707062,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833707813,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"routes.py:spectrum_stream","message":"first_frame_sent","data":{"keys":list(frame.keys())},"timestamp":1772833707857,"hypothesisId":"C"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833708011,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833708217,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833708410,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833708602,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833708800,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833708992,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833709183,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833709374,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833709567,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833709758,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833709954,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833710145,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833710337,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833710532,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833710723,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833710916,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833711108,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833711300,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833711493,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833711685,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833711877,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833712070,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833712269,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833712464,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833712656,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833712853,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833713085,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833713308,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833713552,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833713746,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833713939,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833714132,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833714328,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833714429,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833714523,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833714718,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833714911,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833715111,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833715307,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833715502,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833715693,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833715890,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833716086,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833716280,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833716473,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833716665,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833716858,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833717054,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833717249,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833717446,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833717639,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833717837,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833718056,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833718249,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833718446,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833718638,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833718832,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833719028,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833719221,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833719414,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833719606,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833719798,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833719993,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833720187,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833720389,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833720583,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833720776,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833720971,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833721164,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833721358,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833721550,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833721744,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833721938,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833722131,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833722326,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833722522,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833722720,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833722917,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833723131,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833723328,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833723520,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833723713,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833723911,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833724105,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833724298,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833724493,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833724692,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833724887,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833725080,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833725274,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833725467,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833725659,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833725851,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833726044,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833726238,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833726433,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833726626,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833726820,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833727039,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833727279,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833727504,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833727730,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833727924,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833728119,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833728330,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833728523,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833728717,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833728913,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833729105,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833729303,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833729500,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833729694,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833729888,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833730091,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833730288,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833730483,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833730675,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833730872,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833731066,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833731260,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833731453,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833731648,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833731842,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833732037,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833732232,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833732431,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833732627,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833732824,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833733022,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833733218,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833733426,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833733621,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833733812,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833734005,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833734106,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833734200,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833734396,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833734588,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833734782,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833734978,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833735173,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833735369,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833735564,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833735760,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833735957,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833736150,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833736345,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833736539,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833736733,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833736926,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833737119,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833737312,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833737507,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833737700,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833737895,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833738092,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833738288,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833738487,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833738696,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833738894,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833739091,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833739285,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833739480,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833739673,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833739867,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833740101,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833740334,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833740572,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833740764,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833740960,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833741159,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833741354,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833741550,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833741745,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833741941,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833742136,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833742331,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833742523,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833742721,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833742924,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833743119,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833743312,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833743507,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833743709,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833743909,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833744103,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833744297,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833744492,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833744689,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833744882,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833745078,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833745272,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833745469,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833745662,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833745858,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833746054,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833746251,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833746447,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833746641,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833746835,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833747031,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833747227,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833747424,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833747618,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833747812,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833748008,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833748202,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833748398,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833748590,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833748791,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833748999,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833749195,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833749393,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833749588,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833749786,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833749983,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833750180,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833750376,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833750569,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833750763,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833750959,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833751156,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833751352,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833751546,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833751739,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833751933,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833752127,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833752322,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833752519,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833752712,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833752909,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833753105,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833753303,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833753539,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833753780,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833753881,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833754004,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833754200,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833754397,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833754594,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833754789,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833754985,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833755178,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833755376,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833755572,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833755770,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833755966,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833756163,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833756358,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833756554,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833756747,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833756945,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833757139,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833757337,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833757532,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833757727,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833757922,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833758118,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833758311,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833758509,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833758700,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833758899,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833759102,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833759308,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833759503,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833759700,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833759898,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833760094,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833760289,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833760484,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833760677,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833760872,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833761067,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833761261,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833761462,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833761657,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833761854,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833762052,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833762246,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833762445,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833762640,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833762835,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833763031,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833763226,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833763424,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833763621,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833763817,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833764013,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833764208,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833764413,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833764607,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833764808,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833765011,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833765210,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833765407,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833765602,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833765799,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833765999,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833766193,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833766393,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833766628,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833766834,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833767057,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833767266,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833767464,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833767660,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833767855,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833768054,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833768249,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833768447,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833768641,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833768836,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833769034,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833769228,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833769436,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833769632,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833769827,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833770026,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833770226,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833770424,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833770625,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833770823,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833771022,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833771216,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833771412,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833771606,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833771800,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833771996,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833772193,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833772393,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833772589,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833772785,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833772985,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833773180,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833773374,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833773571,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833773671,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833773767,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833773964,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833774160,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833774358,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833774572,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833774768,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833774964,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833775160,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833775356,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833775551,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833775745,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833775944,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833776142,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833776337,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833776533,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833776728,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833776925,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833777119,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833777313,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833777511,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833777707,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833777904,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833778100,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833778295,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833778492,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833778688,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833778885,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833779080,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833779276,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833779472,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833779687,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833779896,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833780152,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833780374,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833780588,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833780784,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833780981,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833781176,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833781370,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833781565,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833781759,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833781958,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833782157,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833782357,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833782553,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833782749,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833782945,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833783143,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833783339,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833783534,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833783728,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833783922,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833784116,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833784312,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833784506,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833784708,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833784913,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833785111,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833785307,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833785505,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833785703,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833785904,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833786099,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833786295,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833786493,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833786689,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833786883,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833787079,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833787274,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833787471,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833787666,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833787861,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833788060,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833788255,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833788455,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833788651,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833788846,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833789041,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833789238,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833789436,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833789631,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833789830,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833790033,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833790230,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833790432,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833790630,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833790827,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833791030,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833791229,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833791427,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833791624,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833791825,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833792025,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833792223,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833792421,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833792618,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833792813,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833793028,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833793255,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833793472,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:wait","message":"buffer_wait","data":{"cur":cur,"num_per_fft":num_per_fft,"total_count":total_count,"buf_len":total_buffer},"timestamp":1772833793572,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833793701,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833793900,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833794095,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833794291,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833794491,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833794692,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833794892,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833795100,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833795295,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833795493,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833795689,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833795898,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833796097,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833796294,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833796494,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833796695,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833796893,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833797092,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833797288,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833797486,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833797685,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833797880,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833798076,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833798274,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833798471,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833798666,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833798860,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833799057,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833799252,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833799451,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833799646,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833799843,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833800041,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833800257,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833800454,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833800651,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833800852,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833801049,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833801243,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833801442,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833801636,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833801832,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833802029,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833802226,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833802424,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833802621,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833802816,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833803012,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833803208,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833803406,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833803601,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833803797,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833803993,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833804189,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833804384,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833804584,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833804780,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833804980,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833805174,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833805391,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833805591,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833805790,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833806014,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833806241,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833806457,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833806667,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833806865,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833807062,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833807258,"hypothesisId":"A"}
+{"sessionId":"6cbc7e","location":"spectrum.py:frame_set","message":"first_frame","data":{"n_points":len(freq_d)},"timestamp":1772833807456,"hypothesisId":"A"}

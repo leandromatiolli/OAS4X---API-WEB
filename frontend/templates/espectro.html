@@ -23,32 +23,81 @@
     </header>
     <main>
         <h2>Espectro em tempo real</h2>
-        <p>O intervalo de coleta define a resolução em frequência e a taxa de atualização. Maior intervalo permite ver frequências mais baixas.</p>
-        <div class="form-group">
-            <label>Sensor</label>
-            <select id="spectrum-sensor">
-                <option value="S1">S1 (CH0, CH1)</option>
-                <option value="S2">S2 (CH2, CH3)</option>
-                <option value="S3">S3 (CH4, CH5)</option>
-                <option value="S4">S4 (CH6, CH7)</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Intervalo de coleta (s)</label>
-            <select id="spectrum-interval">
-                <option value="0.1">0,1</option>
-                <option value="0.2">0,2</option>
-                <option value="0.5" selected>0,5</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="5">5</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>Taxa de amostragem</label>
-            <span id="spectrum-rate-display">200000 Hz</span>
-        </div>
+        <p>Aquisição contínua em buffer circular. Cada FFT usa os últimos N pontos do buffer. Maior N = melhor resolução em frequência (Δf = fs/N). A taxa de atualização do gráfico é independente.</p>
+        <fieldset class="form-group">
+            <legend>Aquisição</legend>
+            <div class="form-group">
+                <label>Sensor</label>
+                <select id="spectrum-sensor">
+                    <option value="S1">S1 (CH0, CH1)</option>
+                    <option value="S2">S2 (CH2, CH3)</option>
+                    <option value="S3">S3 (CH4, CH5)</option>
+                    <option value="S4">S4 (CH6, CH7)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Pontos da FFT (N)</label>
+                <select id="spectrum-fft-points">
+                    <option value="8192">8 192</option>
+                    <option value="16384">16 384</option>
+                    <option value="32768">32 768</option>
+                    <option value="65536">65 536</option>
+                    <option value="131072">131 072</option>
+                    <option value="262144" selected>262 144</option>
+                    <option value="524288">524 288</option>
+                    <option value="1048576">1 048 576</option>
+                    <option value="custom">Customizado</option>
+                </select>
+                <p class="form-hint">Cada FFT usa os últimos N pontos do buffer. Maior N = melhor resolução (Δf = fs/N).</p>
+            </div>
+            <div class="form-group" id="spectrum-fft-custom-group" style="display: none;">
+                <label>N customizado</label>
+                <input type="number" id="spectrum-fft-custom" min="8192" max="1048576" value="262144" placeholder="262144">
+            </div>
+            <div class="form-group">
+                <label>Atualização do gráfico</label>
+                <select id="spectrum-update-rate">
+                    <option value="0.5">2 Hz (0,5 s)</option>
+                    <option value="0.2">5 Hz (0,2 s)</option>
+                    <option value="0.1" selected>10 Hz (0,1 s)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Taxa de amostragem</label>
+                <span id="spectrum-rate-display">200000 Hz</span>
+            </div>
+            <p id="spectrum-buffer-info" class="form-hint">Duração do buffer ≈ <span id="spectrum-buffer-duration">-</span> s | Δf ≈ <span id="spectrum-df">-</span> Hz</p>
+        </fieldset>
+        <fieldset class="form-group">
+            <legend>Regulagens FFT</legend>
+            <div class="form-group">
+                <label>Janela</label>
+                <select id="spectrum-window">
+                    <option value="none">Nenhuma</option>
+                    <option value="hamming" selected>Hamming</option>
+                    <option value="hanning">Hanning</option>
+                    <option value="blackman">Blackman</option>
+                    <option value="blackmanharris">Blackman-Harris</option>
+                    <option value="kaiser">Kaiser</option>
+                    <option value="bartlett">Bartlett</option>
+                    <option value="flattop">Flattop</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Escala</label>
+                <select id="spectrum-scale">
+                    <option value="db" selected>dB</option>
+                    <option value="linear">Linear</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Canal</label>
+                <select id="spectrum-channel">
+                    <option value="0">CH0</option>
+                    <option value="1">CH1</option>
+                </select>
+            </div>
+        </fieldset>
         <div class="form-group">
             <button id="btn-start-spectrum">Iniciar</button>
             <button id="btn-stop-spectrum" class="danger" disabled>Parar</button>

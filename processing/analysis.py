@@ -3,7 +3,7 @@ Análise para Etapa 3: RMS em janela deslizante, P95/P99, FFT.
 """
 from __future__ import annotations
 
-from typing import List
+from typing import List, Optional
 
 import numpy as np
 
@@ -47,6 +47,59 @@ def percentiles_per_channel(
     return out
 
 
+# Tipos de janela suportados pela FFT avançada (scipy.signal.get_window)
+FFT_WINDOW_TYPES = ("none", "hamming", "hanning", "blackman", "blackmanharris", "kaiser", "bartlett", "flattop")
+
+
+def fft_magnitude_advanced(
+    signal: np.ndarray,
+    fs_hz: float,
+    window_type: str = "hamming",
+    db: bool = True,
+    zero_pad: Optional[int] = None,
+    kaiser_beta: float = 8.0,
+) -> tuple[np.ndarray, np.ndarray]:
+    """
+    FFT unilateral com regulagens (alinhado à lógica do mkf.py).
+    Retorna (freq_axis_hz, magnitude).
+    signal: 1D array
+    fs_hz: taxa de amostragem
+    window_type: 'none' ou nome aceito por scipy.signal.get_window (hamming, hanning, blackman, blackmanharris, kaiser, etc.)
+    db: magnitude em dB (20*log10) ou linear
+    zero_pad: se definido e > 0, N total da FFT: se > len(signal) faz zero-padding; se < len(signal) usa os primeiros zero_pad pontos (truncagem). None/0 = usar todos os pontos.
+    kaiser_beta: parâmetro beta para janela Kaiser (usado só se window_type=='kaiser')
+    """
+    n = signal.size
+    if n == 0:
+        return np.array([]), np.array([])
+    x = signal.astype(np.float64)
+    n_fft = n
+    if zero_pad is not None and zero_pad > 0:
+        n_fft = int(zero_pad)
+        if n_fft > n:
+            x = np.resize(x, n_fft)
+            x[n:] = 0.0
+        else:
+            x = x[:n_fft].copy()
+    if window_type and window_type.lower() != "none":
+        from scipy.signal import get_window
+        wtype = window_type.lower()
+        if wtype == "kaiser":
+            win = get_window(("kaiser", kaiser_beta), n_fft)
+        else:
+            win = get_window(wtype, n_fft)
+        x = x * win
+    ft = np.fft.rfft(x)
+    mag = np.abs(ft) * (2.0 / n_fft)
+    mag[0] *= 0.5
+    if len(ft) > 1 and n_fft % 2 == 0:
+        mag[-1] *= 0.5
+    if db:
+        mag = 20 * np.log10(np.maximum(mag, 1e-12))
+    freq = np.fft.rfftfreq(n_fft, 1.0 / fs_hz)
+    return freq, mag
+
+
 def fft_magnitude(
     signal: np.ndarray,
     fs_hz: float,
@@ -60,21 +113,12 @@ def fft_magnitude(
     window: aplicar janela de Hamming
     db: magnitude em dB (True) ou linear (False)
     """
-    n = signal.size
-    if n == 0:
-        return np.array([]), np.array([])
-    x = signal.astype(np.float64)
-    if window:
-        x = x * np.hamming(n)
-    ft = np.fft.rfft(x)
-    mag = np.abs(ft) * (2.0 / n)
-    mag[0] *= 0.5
-    if len(ft) > 1 and n % 2 == 0:
-        mag[-1] *= 0.5
-    if db:
-        mag = 20 * np.log10(np.maximum(mag, 1e-12))
-    freq = np.fft.rfftfreq(n, 1.0 / fs_hz)
-    return freq, mag
+    return fft_magnitude_advanced(
+        signal, fs_hz,
+        window_type="hamming" if window else "none",
+        db=db,
+        zero_pad=None,
+    )
 
 
 def downsample_for_plot(

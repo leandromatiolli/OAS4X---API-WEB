@@ -43,7 +43,9 @@ from acquisition.spectrum import (
     is_spectrum_running,
     get_last_spectrum_frame,
     get_spectrum_sensor,
-    get_spectrum_interval_s,
+    get_spectrum_fft_points,
+    get_spectrum_update_interval_s,
+    get_spectrum_fft_params,
 )
 
 router = APIRouter(prefix="/api", tags=["api"])
@@ -391,11 +393,13 @@ async def monitor_stream(websocket: WebSocket):
 
 @router.get("/spectrum/status")
 async def spectrum_status():
-    """Status do espectro: se está ativo, sensor e intervalo."""
+    """Status do espectro: se está ativo, sensor, fft_points, update_interval_s e parâmetros FFT."""
     return {
         "running": is_spectrum_running(),
         "sensor": get_spectrum_sensor(),
-        "interval_s": get_spectrum_interval_s(),
+        "fft_points": get_spectrum_fft_points(),
+        "update_interval_s": get_spectrum_update_interval_s(),
+        "fft_params": get_spectrum_fft_params(),
     }
 
 
@@ -409,8 +413,8 @@ async def spectrum_stop():
 @router.websocket("/spectrum/stream")
 async def spectrum_stream(websocket: WebSocket):
     """
-    WebSocket: inicia espectro para o sensor (query sensor, interval_s, sample_rate).
-    Envia frames com freq_hz e magnitude_db a cada novo cálculo.
+    WebSocket: inicia espectro (query sensor, fft_points, update_interval_s, sample_rate, window_type, db, channel, zero_pad).
+    Envia frames com freq_hz e magnitude_db ou magnitude_linear.
     """
     await websocket.accept()
     sensor = websocket.query_params.get("sensor", "S1").upper()
@@ -419,14 +423,58 @@ async def spectrum_stream(websocket: WebSocket):
         await websocket.close()
         return
     try:
-        interval_s = float(websocket.query_params.get("interval_s", "0.5"))
+        fft_points = int(websocket.query_params.get("fft_points", "262144"))
     except ValueError:
-        interval_s = 0.5
+        fft_points = 262144
+    try:
+        update_interval_s = float(websocket.query_params.get("update_interval_s", "0.1"))
+    except ValueError:
+        update_interval_s = 0.1
+    interval_s_param = websocket.query_params.get("interval_s")
+    if interval_s_param is not None and interval_s_param != "":
+        try:
+            interval_s = float(interval_s_param)
+            if fft_points == 262144:
+                fft_points = int(interval_s * 200000)
+                update_interval_s = min(interval_s, 0.5)
+        except ValueError:
+            pass
     try:
         sample_rate = int(websocket.query_params.get("sample_rate", "200000"))
     except ValueError:
         sample_rate = 200000
-    ok, msg = start_spectrum(sensor, interval_s, sample_rate_hz=sample_rate)
+    window_type = websocket.query_params.get("window_type", "hamming").lower()
+    db_param = websocket.query_params.get("db", "true").lower()
+    use_db = db_param in ("1", "true", "yes")
+    try:
+        channel = int(websocket.query_params.get("channel", "0"))
+    except ValueError:
+        channel = 0
+    if channel not in (0, 1):
+        channel = 0
+    zero_pad = websocket.query_params.get("zero_pad")
+    if zero_pad is not None and zero_pad != "":
+        try:
+            zero_pad = int(zero_pad)
+            if zero_pad <= 0:
+                zero_pad = None
+        except ValueError:
+            zero_pad = None
+    else:
+        zero_pad = None
+    fft_params = {
+        "window_type": window_type,
+        "db": use_db,
+        "channel": channel,
+        "zero_pad": zero_pad,
+    }
+    ok, msg = start_spectrum(
+        sensor,
+        fft_points=fft_points,
+        update_interval_s=update_interval_s,
+        sample_rate_hz=sample_rate,
+        fft_params=fft_params,
+    )
     if not ok:
         await websocket.send_json({"error": msg})
         await websocket.close()
