@@ -32,6 +32,7 @@ def write_run(
     test_name: str = "",
     run_id: Optional[str] = None,
     analog_range_id: Optional[str] = None,
+    ellipse_params_by_sensor: Optional[dict] = None,
 ) -> str:
     """
     Escreve uma run em /data/raw/<run_id>.<bin|json>.
@@ -75,6 +76,8 @@ def write_run(
     }
     if analog_range_id is not None:
         meta["range"] = analog_range_id
+    if ellipse_params_by_sensor is not None:
+        meta["ellipse_params"] = ellipse_params_by_sensor
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=2, ensure_ascii=False)
         f.flush()

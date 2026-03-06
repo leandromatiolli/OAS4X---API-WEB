@@ -103,6 +103,22 @@ async def monitor_page(request: Request):
     return templates.TemplateResponse("monitor.html", {"request": request})
 
 
+@app.get("/espectro", response_class=HTMLResponse)
+async def espectro_page(request: Request):
+    """Página Espectro - espectro (FFT) em tempo real por sensor."""
+    if templates is None:
+        return HTMLResponse("<h1>Espectro</h1><p>Templates not found.</p>")
+    return templates.TemplateResponse("espectro.html", {"request": request})
+
+
+@app.get("/calibration", response_class=HTMLResponse)
+async def calibration_page(request: Request):
+    """Página Calibration - calibração contínua e fit a partir de run (Etapa 4)."""
+    if templates is None:
+        return HTMLResponse("<h1>Calibration</h1><p>Templates not found.</p>")
+    return templates.TemplateResponse("calibration.html", {"request": request})
+
+
 @app.get("/health")
 async def health():
     """Health check (Etapa 2): uptime, CPU temp, RAM, disco, status USB/DAQ."""

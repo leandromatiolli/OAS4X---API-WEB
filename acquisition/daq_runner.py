@@ -135,6 +135,16 @@ def run_acquisition(
             stop_monitor()
         except Exception:
             pass
+        try:
+            from acquisition.spectrum import stop_spectrum
+            stop_spectrum()
+        except Exception:
+            pass
+        try:
+            from acquisition.calibration_loop import stop_calibration_loop
+            stop_calibration_loop()
+        except Exception:
+            pass
 
         devices = get_daq_device_inventory(InterfaceType.ANY)
         if not devices:
@@ -195,6 +205,17 @@ def run_acquisition(
 
         # Persistir run em /data/raw (canais efetivamente escaneados: low..high)
         channels_scanned = list(range(low_channel, high_channel + 1))
+        ellipse_params_by_sensor = {}
+        try:
+            from config import SENSOR_CHANNELS
+            from calibration.storage import load_ellipse_params
+            for sensor, (ch0, ch1) in SENSOR_CHANNELS.items():
+                if ch0 in channels_scanned and ch1 in channels_scanned:
+                    loaded = load_ellipse_params(sensor)
+                    if loaded and "params" in loaded:
+                        ellipse_params_by_sensor[sensor] = loaded["params"]
+        except Exception:
+            pass
         try:
             from storage.runs import write_run
             write_run(
@@ -205,7 +226,31 @@ def run_acquisition(
                 test_name=test_name,
                 run_id=run_id,
                 analog_range_id=range_id,
+                ellipse_params_by_sensor=ellipse_params_by_sensor if ellipse_params_by_sensor else None,
             )
+        except Exception:
+            pass
+        # Opcional: gravar fase demodulada por sensor em processed/
+        try:
+            if ellipse_params_by_sensor:
+                from calibration.ellipse import demodulate_phase
+                from storage.processed import write_demod
+                demod_data = {}
+                for sensor, params in ellipse_params_by_sensor.items():
+                    ch0, ch1 = SENSOR_CHANNELS[sensor]
+                    idx0 = channels_scanned.index(ch0)
+                    idx1 = channels_scanned.index(ch1)
+                    phase = demodulate_phase(data[idx0], data[idx1], tuple(params))
+                    demod_data[sensor] = {"phase": phase, "ellipse_params": list(params)}
+                write_demod(run_id, demod_data)
+        except Exception:
+            pass
+
+        try:
+            import time
+            time.sleep(0.5)
+            from acquisition.calibration_loop import restart_calibration_if_desired
+            restart_calibration_if_desired()
         except Exception:
             pass
 

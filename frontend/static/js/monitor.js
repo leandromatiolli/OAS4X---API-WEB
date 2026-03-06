@@ -43,11 +43,30 @@
     const sensor = sensorSelect.value;
     btnStart.disabled = true;
     btnStop.disabled = false;
-    showStatus('Conectando ao sensor ' + sensor + '...');
-    const wsUrl = wsBase + '/monitor/stream?sensor=' + encodeURIComponent(sensor);
+    showStatus('Resetando DAQ e conectando ao sensor ' + sensor + '...');
+    fetch(API + '/daq/reset', { method: 'POST' })
+      .then(function () {
+        const wsUrl = wsBase + '/monitor/stream?sensor=' + encodeURIComponent(sensor);
+        openMonitorWs(wsUrl, sensor);
+      })
+      .catch(function () {
+        openMonitorWs(wsBase + '/monitor/stream?sensor=' + encodeURIComponent(sensor), sensor);
+      });
+  }
+
+  function openMonitorWs(wsUrl, sensor) {
     ws = new WebSocket(wsUrl);
     ws.onopen = function () {
       showStatus('Monitor ativo – sensor ' + sensor + '. Atualização em tempo real.');
+    };
+    ws.onclose = function () {
+      btnStart.disabled = false;
+      btnStop.disabled = true;
+      if (statusEl.textContent.indexOf('Erro') === -1) {
+        showStatus('Monitor parado.');
+      }
+      ws = null;
+      fetch(API + '/daq/reset', { method: 'POST' }).catch(function () {});
     };
     ws.onmessage = function (event) {
       try {
@@ -62,14 +81,6 @@
     ws.onerror = function () {
       showStatus('Erro de conexão WebSocket.', true);
     };
-    ws.onclose = function () {
-      btnStart.disabled = false;
-      btnStop.disabled = true;
-      if (statusEl.textContent.indexOf('Erro') === -1) {
-        showStatus('Monitor parado.');
-      }
-      ws = null;
-    };
   }
 
   function stopMonitor() {
@@ -77,7 +88,9 @@
       ws.close();
       ws = null;
     }
-    fetch(API + '/monitor/stop', { method: 'POST' }).catch(function () {});
+    fetch(API + '/monitor/stop', { method: 'POST' })
+      .then(function () { return fetch(API + '/daq/reset', { method: 'POST' }); })
+      .catch(function () {});
   }
 
   btnStart.addEventListener('click', startMonitor);

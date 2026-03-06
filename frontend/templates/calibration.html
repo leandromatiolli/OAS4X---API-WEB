@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calibration - OAS4X</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>OAS4X API-WEB</h1>
+        <nav>
+            <a href="/">Início</a>
+            <a href="/acquisition">Acquisition</a>
+            <a href="/files">Files</a>
+            <a href="/monitor">Monitor</a>
+            <a href="/espectro">Espectro</a>
+            <a href="/health-page">Health</a>
+            <a href="/analysis">Analysis</a>
+            <a href="/calibration">Calibration</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Calibration</h2>
+
+        <section class="calib-continuous">
+            <h3>Calibração contínua</h3>
+            <p class="calib-hint">A calibração para automaticamente durante uma aquisição de alta taxa e pode ser religada depois na página Calibration.</p>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="calib-toggle"> Ligar calibração contínua
+                </label>
+                <button type="button" id="calib-reset-btn" class="button-link">Reset calibração</button>
+            </div>
+            <p id="calib-phase-msg" class="status-msg" style="display:none;"></p>
+            <div id="calib-params" class="form-inline">
+                <div class="form-group">
+                    <label>Taxa (Hz)</label>
+                    <input type="number" id="calib-rate" value="1000" min="100" step="100">
+                </div>
+                <div class="form-group">
+                    <label>Duração do trecho (s)</label>
+                    <input type="number" id="calib-chunk" value="1" min="0.1" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label>Intervalo entre coletas (s)</label>
+                    <input type="number" id="calib-interval" value="5" min="1" step="1">
+                </div>
+                <div class="form-group">
+                    <label>Pontos para o fit (0 = máximo)</label>
+                    <input type="number" id="calib-fit-points" value="50000" min="0" step="1000">
+                </div>
+                <div class="form-group">
+                    <label>Sensores</label>
+                    <label><input type="checkbox" name="calib-sensors" value="S1"> S1</label>
+                    <label><input type="checkbox" name="calib-sensors" value="S2"> S2</label>
+                    <label><input type="checkbox" name="calib-sensors" value="S3"> S3</label>
+                    <label><input type="checkbox" name="calib-sensors" value="S4"> S4</label>
+                </div>
+            </div>
+            <p id="calib-status-msg" class="status-msg"></p>
+        </section>
+
+        <section class="calib-plot">
+            <h3>Gráfico do fit (X–Y)</h3>
+            <div class="form-group">
+                <label>Sensor</label>
+                <select id="plot-sensor">
+                    <option value="S1">S1</option>
+                    <option value="S2">S2</option>
+                    <option value="S3">S3</option>
+                    <option value="S4">S4</option>
+                </select>
+            </div>
+            <div id="plot-xy"></div>
+        </section>
+
+        <section class="calib-from-run">
+            <h3>Fit a partir de uma aquisição</h3>
+            <div class="form-group">
+                <label>Run</label>
+                <select id="fit-run-select">
+                    <option value="">-- Carregar lista --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Sensor</label>
+                <select id="fit-sensor">
+                    <option value="S1">S1</option>
+                    <option value="S2">S2</option>
+                    <option value="S3">S3</option>
+                    <option value="S4">S4</option>
+                </select>
+                <button type="button" id="btn-fit-from-run">Aplicar fit e gravar</button>
+            </div>
+            <p id="fit-from-run-msg" class="status-msg"></p>
+        </section>
+
+        <section class="calib-params-display">
+            <h3>Parâmetros atuais por sensor</h3>
+            <div id="params-by-sensor">
+                <p id="params-placeholder">Carregue a página ou aplique um fit para ver p, q, r, s, alpha.</p>
+            </div>
+        </section>
+    </main>
+    <script src="/static/js/calibration.js"></script>
+</body>
+</html>

@@ -10,6 +10,11 @@
   const statsTableBody = document.getElementById('stats-table').querySelector('tbody');
   const csvDecimate = document.getElementById('csv-decimate');
   const csvDownload = document.getElementById('csv-download');
+  const demodSection = document.getElementById('demod-section');
+  const demodSectionTitle = document.getElementById('demod-section-title');
+  const plotDemodEl = document.getElementById('plot-demod');
+  const btnDownloadDemodCsv = document.getElementById('btn-download-demod-csv');
+  var lastDemodData = null;
 
   function getRunId() {
     var params = new URLSearchParams(window.location.search);
@@ -47,6 +52,7 @@
         loadFft(runId, 0);
         loadStats(runId);
         updateCsvLink(runId);
+        loadDemod(runId);
       })
       .catch(function (err) {
         showError('Erro: ' + err.message);
@@ -115,6 +121,48 @@
       });
   }
 
+  function loadDemod(runId) {
+    lastDemodData = null;
+    if (!demodSection || !plotDemodEl) return;
+    fetch(API + '/files/' + encodeURIComponent(runId) + '/demod')
+      .then(function (r) {
+        if (!r.ok) return null;
+        return r.json();
+      })
+      .then(function (data) {
+        if (!data || !data.demod || Object.keys(data.demod).length === 0) {
+          demodSectionTitle.style.display = 'none';
+          demodSection.style.display = 'none';
+          return;
+        }
+        lastDemodData = data;
+        demodSectionTitle.style.display = 'block';
+        demodSection.style.display = 'block';
+        var traces = [];
+        Object.keys(data.demod).forEach(function (sensor) {
+          var d = data.demod[sensor];
+          var t = d.time_s || (d.phase && d.phase.length ? d.phase.map(function (_, i) { return i; }) : []);
+          traces.push({
+            x: t,
+            y: d.phase || [],
+            type: 'scatter',
+            mode: 'lines',
+            name: sensor
+          });
+        });
+        Plotly.newPlot(plotDemodEl, traces, {
+          margin: { t: 30, r: 30, b: 40, l: 50 },
+          xaxis: { title: 'Tempo (s)' },
+          yaxis: { title: 'Fase (rad)' },
+          showLegend: true
+        }, { responsive: true });
+      })
+      .catch(function () {
+        demodSectionTitle.style.display = 'none';
+        demodSection.style.display = 'none';
+      });
+  }
+
   function updateCsvLink(runId) {
     var dec = parseInt(csvDecimate.value, 10) || 1;
     csvDownload.href = API + '/files/' + encodeURIComponent(runId) + '/export/csv?decimate=' + dec;
@@ -124,6 +172,35 @@
   csvDecimate.addEventListener('change', function () {
     var runId = getRunId();
     if (runId) updateCsvLink(runId);
+  });
+
+  btnDownloadDemodCsv.addEventListener('click', function () {
+    if (!lastDemodData || !lastDemodData.demod) return;
+    var runId = lastDemodData.run_id || 'demod';
+    var rows = [];
+    var sensors = Object.keys(lastDemodData.demod);
+    if (sensors.length === 0) return;
+    var first = lastDemodData.demod[sensors[0]];
+    var t = first.time_s || [];
+    if (!t.length && first.phase) {
+      for (var i = 0; i < first.phase.length; i++) t.push(i);
+    }
+    rows.push('time_s,' + sensors.join(','));
+    for (var i = 0; i < t.length; i++) {
+      var row = String(t[i]);
+      sensors.forEach(function (s) {
+        var ph = lastDemodData.demod[s].phase;
+        row += ',' + (ph && ph[i] != null ? ph[i] : '');
+      });
+      rows.push(row);
+    }
+    var csv = rows.join('\n');
+    var blob = new Blob([csv], { type: 'text/csv' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = runId + '_demod.csv';
+    a.click();
+    URL.revokeObjectURL(a.href);
   });
 
   btnLoad.addEventListener('click', loadPreview);

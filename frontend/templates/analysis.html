@@ -15,7 +15,10 @@
             <a href="/acquisition">Acquisition</a>
             <a href="/files">Files</a>
             <a href="/monitor">Monitor</a>
+            <a href="/espectro">Espectro</a>
             <a href="/health-page">Health</a>
+            <a href="/analysis">Analysis</a>
+            <a href="/calibration">Calibration</a>
         </nav>
     </header>
     <main>
@@ -46,6 +49,14 @@
                 <label>Decimar (1 = todas amostras)</label>
                 <input type="number" id="csv-decimate" value="10" min="1">
                 <a id="csv-download" href="#" download class="button-link">Download CSV</a>
+            </div>
+            <h3 id="demod-section-title" style="display:none;">Demodulado</h3>
+            <div id="demod-section" style="display:none;">
+                <p>Fase demodulada por sensor (quando a run tem calibração associada).</p>
+                <div id="plot-demod"></div>
+                <div class="form-group">
+                    <button type="button" id="btn-download-demod-csv">Download demodulado (CSV)</button>
+                </div>
             </div>
         </div>
     </main>

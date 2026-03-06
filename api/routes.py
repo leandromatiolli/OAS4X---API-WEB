@@ -29,6 +29,7 @@ from processing.analysis import (
     MAX_PLOT_POINTS,
 )
 from storage.runs import list_runs, get_run_metadata, get_run_bin_path, read_run_bin, delete_run
+from storage.processed import read_demod
 from acquisition.monitor import (
     start_monitor,
     stop_monitor,
@@ -36,8 +37,40 @@ from acquisition.monitor import (
     get_last_frame,
     get_monitor_sensor,
 )
+from acquisition.spectrum import (
+    start_spectrum,
+    stop_spectrum,
+    is_spectrum_running,
+    get_last_spectrum_frame,
+    get_spectrum_sensor,
+    get_spectrum_interval_s,
+)
 
 router = APIRouter(prefix="/api", tags=["api"])
+
+
+# --- Calibração (Etapa 4) ---
+
+class CalibrationStartBody(BaseModel):
+    rate_hz: float = 1000
+    chunk_duration_s: float = 1
+    interval_s: float = 5
+    fit_points: int = 50000
+    sensors: Optional[list[str]] = None
+
+
+class FitFromRunBody(BaseModel):
+    run_id: str
+    sensor: str
+
+
+class CalibrationResetBody(BaseModel):
+    restart: bool = False
+    rate_hz: float = 1000
+    chunk_duration_s: float = 1
+    interval_s: float = 5
+    fit_points: int = 50000
+    sensors: Optional[list[str]] = None
 
 
 class AcquisitionStartBody(BaseModel):
@@ -271,6 +304,21 @@ async def file_export_csv(run_id: str, decimate: int = 1):
     )
 
 
+# --- Reset DAQ (parar monitor + espectro e aguardar liberação do dispositivo) ---
+
+@router.post("/daq/reset")
+async def daq_reset():
+    """
+    Para monitor e espectro e aguarda a liberação do dispositivo.
+    Use após Parar ou antes de Iniciar de novo para evitar travar o DAQ.
+    """
+    import time
+    stop_monitor()
+    stop_spectrum()
+    time.sleep(1.2)
+    return {"ok": True, "message": "DAQ resetado. Pode iniciar Monitor ou Espectro."}
+
+
 # --- Monitor em tempo real (streaming por sensor) ---
 
 @router.get("/monitor/status")
@@ -323,3 +371,257 @@ async def monitor_stream(websocket: WebSocket):
         pass
     finally:
         stop_monitor()
+        try:
+            import time
+            time.sleep(0.3)
+        except Exception:
+            pass
+
+
+# --- Espectro em tempo real ---
+
+@router.get("/spectrum/status")
+async def spectrum_status():
+    """Status do espectro: se está ativo, sensor e intervalo."""
+    return {
+        "running": is_spectrum_running(),
+        "sensor": get_spectrum_sensor(),
+        "interval_s": get_spectrum_interval_s(),
+    }
+
+
+@router.post("/spectrum/stop")
+async def spectrum_stop():
+    """Para o espectro em tempo real."""
+    stop_spectrum()
+    return {"stopped": True}
+
+
+@router.websocket("/spectrum/stream")
+async def spectrum_stream(websocket: WebSocket):
+    """
+    WebSocket: inicia espectro para o sensor (query sensor, interval_s, sample_rate).
+    Envia frames com freq_hz e magnitude_db a cada novo cálculo.
+    """
+    await websocket.accept()
+    sensor = websocket.query_params.get("sensor", "S1").upper()
+    if sensor not in ("S1", "S2", "S3", "S4"):
+        await websocket.send_json({"error": "Sensor inválido. Use S1, S2, S3 ou S4."})
+        await websocket.close()
+        return
+    try:
+        interval_s = float(websocket.query_params.get("interval_s", "0.5"))
+    except ValueError:
+        interval_s = 0.5
+    try:
+        sample_rate = int(websocket.query_params.get("sample_rate", "200000"))
+    except ValueError:
+        sample_rate = 200000
+    ok, msg = start_spectrum(sensor, interval_s, sample_rate_hz=sample_rate)
+    if not ok:
+        await websocket.send_json({"error": msg})
+        await websocket.close()
+        return
+    try:
+        last_sent = None
+        while True:
+            frame = get_last_spectrum_frame()
+            if frame is None:
+                await asyncio.sleep(0.05)
+                continue
+            if "error" in frame:
+                await websocket.send_json(frame)
+                break
+            if frame != last_sent:
+                last_sent = dict(frame)
+                await websocket.send_json(frame)
+            await asyncio.sleep(0.05)
+    except WebSocketDisconnect:
+        pass
+    except Exception:
+        pass
+    finally:
+        stop_spectrum()
+        try:
+            from acquisition.calibration_loop import restart_calibration_if_desired
+            restart_calibration_if_desired()
+        except Exception:
+            pass
+
+
+# --- Calibração (Etapa 4) ---
+
+@router.get("/calibration/status")
+async def calibration_status():
+    """Status do loop de calibração: running, params atuais, last_fit por sensor."""
+    from acquisition.calibration_loop import get_calibration_status
+    return get_calibration_status()
+
+
+@router.post("/calibration/start")
+async def calibration_start(body: CalibrationStartBody):
+    """Inicia o loop de calibração contínua (para monitor/spectrum se ativos)."""
+    from acquisition.calibration_loop import start_calibration_loop
+    start_calibration_loop(
+        rate_hz=body.rate_hz,
+        chunk_duration_s=body.chunk_duration_s,
+        interval_s=body.interval_s,
+        fit_points=body.fit_points,
+        sensors=body.sensors,
+    )
+    return {"started": True}
+
+
+@router.post("/calibration/stop")
+async def calibration_stop():
+    """Para o loop de calibração (solicitação do usuário na página; não re-inicia ao terminar aquisição/monitor/espectro)."""
+    from acquisition.calibration_loop import stop_calibration_loop
+    stop_calibration_loop(user_requested=True)
+    return {"stopped": True}
+
+
+@router.post("/calibration/reset")
+async def calibration_reset(body: Optional[CalibrationResetBody] = None):
+    """
+    Zera buffers e último fit.
+    Se body.restart=True, para a calibração (se estiver rodando), reseta e reinicia com os parâmetros
+    enviados, executando novamente a aquisição inicial de 10 s por sensor.
+    """
+    import time
+    from acquisition.calibration_loop import (
+        reset_calibration,
+        stop_calibration_loop,
+        start_calibration_loop,
+        is_calibration_running,
+    )
+    was_running = is_calibration_running()
+    if was_running:
+        stop_calibration_loop()
+        time.sleep(1.5)
+    reset_calibration()
+    if body and body.restart:
+        start_calibration_loop(
+            rate_hz=body.rate_hz,
+            chunk_duration_s=body.chunk_duration_s,
+            interval_s=body.interval_s,
+            fit_points=body.fit_points,
+            sensors=body.sensors or None,
+        )
+        return {"reset": True, "restarted": True}
+    return {"reset": True, "restarted": False}
+
+
+@router.get("/calibration/fit/{sensor}")
+async def calibration_fit(sensor: str):
+    """Último fit do sensor (params, R, G, ellipse_curve) para o gráfico X-Y."""
+    from acquisition.calibration_loop import get_last_fit
+    if sensor not in SENSOR_CHANNELS:
+        raise HTTPException(400, "Sensor inválido. Use S1, S2, S3 ou S4.")
+    fit = get_last_fit(sensor)
+    if fit is None:
+        return {"sensor": sensor, "params": None, "R": [], "G": [], "ellipse_curve": {"x": [], "y": []}, "updated_utc": None}
+    return {"sensor": sensor, **fit}
+
+
+@router.post("/calibration/fit-from-run")
+async def calibration_fit_from_run(body: FitFromRunBody):
+    """Aplica fit na run indicada para o sensor e grava no JSON do sensor. One-shot."""
+    from calibration.ellipse import fit_ellipse, ellipse_curve_points
+    from calibration.storage import save_ellipse_params
+    from datetime import datetime
+    if body.sensor not in SENSOR_CHANNELS:
+        raise HTTPException(400, "Sensor inválido. Use S1, S2, S3 ou S4.")
+    out = read_run_bin(body.run_id)
+    if not out:
+        raise HTTPException(404, "Run não encontrada")
+    data, meta = out
+    ch0, ch1 = SENSOR_CHANNELS[body.sensor]
+    channels = meta.get("channels", [])
+    if ch0 not in channels or ch1 not in channels:
+        raise HTTPException(400, f"Run não contém canais do sensor {body.sensor}")
+    idx0 = channels.index(ch0)
+    idx1 = channels.index(ch1)
+    R = data[idx0, :].flatten()
+    G = data[idx1, :].flatten()
+    max_pts = 100000
+    if len(R) > max_pts:
+        step = len(R) // max_pts
+        R = R[::step]
+        G = G[::step]
+    if len(R) < 10:
+        raise HTTPException(400, "Poucos pontos na run para o fit")
+    p, q, r, s, alpha = fit_ellipse(R, G)
+    param = (p, q, r, s, alpha)
+    updated_utc = datetime.utcnow().isoformat() + "Z"
+    save_ellipse_params(body.sensor, list(param), updated_utc)
+    ex, ey = ellipse_curve_points(param, 200)
+    # Downsample R,G para plot (máx 2000)
+    n_plot = min(2000, len(R))
+    step_r = max(1, len(R) // n_plot)
+    R_plot = R[::step_r].tolist()
+    G_plot = G[::step_r].tolist()
+    return {
+        "sensor": body.sensor,
+        "params": [p, q, r, s, alpha],
+        "R": R_plot,
+        "G": G_plot,
+        "ellipse_curve": {"x": ex.tolist(), "y": ey.tolist()},
+        "updated_utc": updated_utc,
+    }
+
+
+@router.get("/calibration/params/{sensor}")
+async def calibration_params(sensor: str):
+    """Parâmetros da elipse carregados do arquivo do sensor (para UI ou demodulação)."""
+    from calibration.storage import load_ellipse_params
+    if sensor not in SENSOR_CHANNELS:
+        raise HTTPException(400, "Sensor inválido. Use S1, S2, S3 ou S4.")
+    params = load_ellipse_params(sensor)
+    if params is None:
+        return {"sensor": sensor, "params": None, "updated_utc": None}
+    return {"sensor": sensor, **params}
+
+
+@router.get("/files/{run_id}/demod")
+async def file_demod(run_id: str):
+    """
+    Dados demodulados (fase por sensor). Se existir processed/{run_id}_demod.json retorna;
+    senão, se meta tiver ellipse_params, calcula on-the-fly a partir do BIN.
+    """
+    demod = read_demod(run_id)
+    if demod is not None:
+        meta = get_run_metadata(run_id) or {}
+        fs = meta.get("sample_rate_hz", 1)
+        for sensor in list(demod.keys()):
+            v = demod[sensor]
+            if isinstance(v, dict) and "time_s" not in v and "phase" in v:
+                n = len(v["phase"])
+                demod[sensor] = {**v, "time_s": (np.arange(n, dtype=np.float64) / fs).tolist()}
+        return {"run_id": run_id, "meta": meta, "demod": demod}
+    meta = get_run_metadata(run_id)
+    if not meta:
+        raise HTTPException(404, "Run não encontrada")
+    ellipse_params = meta.get("ellipse_params")
+    if not ellipse_params:
+        return {"run_id": run_id, "meta": meta, "demod": None}
+    out = read_run_bin(run_id)
+    if not out:
+        raise HTTPException(404, "Run não encontrada")
+    data, _ = out
+    from calibration.ellipse import demodulate_phase
+    channels = meta.get("channels", [])
+    fs = meta.get("sample_rate_hz", 1)
+    demod = {}
+    for sensor, params in ellipse_params.items():
+        if sensor not in SENSOR_CHANNELS:
+            continue
+        ch0, ch1 = SENSOR_CHANNELS[sensor]
+        if ch0 not in channels or ch1 not in channels:
+            continue
+        idx0 = channels.index(ch0)
+        idx1 = channels.index(ch1)
+        phase = demodulate_phase(data[idx0], data[idx1], tuple(params))
+        n = len(phase)
+        t = (np.arange(n, dtype=np.float64) / fs).tolist()
+        demod[sensor] = {"phase": phase.tolist(), "time_s": t, "ellipse_params": list(params)}
+    return {"run_id": run_id, "meta": meta, "demod": demod}

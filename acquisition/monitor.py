@@ -205,12 +205,22 @@ def start_monitor(sensor: str, range_id: str = "BIP5VOLTS") -> Tuple[bool, str]:
     state = get_state()
     if state.status == AcquisitionStatus.RUNNING:
         return False, "Pare a aquisição antes de iniciar o monitor."
+    try:
+        from acquisition.spectrum import stop_spectrum
+        stop_spectrum()
+    except Exception:
+        pass
+    try:
+        from acquisition.calibration_loop import stop_calibration_loop
+        stop_calibration_loop()
+    except Exception:
+        pass
+    stop_monitor()
+    time.sleep(1.0)
     global _monitor_thread, _monitor_stop, _monitor_sensor
     with _monitor_lock:
         if _monitor_thread is not None and _monitor_thread.is_alive():
-            if _monitor_sensor == sensor:
-                return True, "Monitor já ativo para este sensor."
-    stop_monitor()
+            return False, "Aguarde: monitor ainda encerrando."
     _monitor_stop.clear()
     _monitor_sensor = sensor
     _monitor_thread = threading.Thread(
@@ -234,4 +244,5 @@ def stop_monitor() -> None:
         _monitor_thread = None
         _monitor_sensor = None
     if th is not None:
-        th.join(timeout=2.0)
+        th.join(timeout=5.0)
+    time.sleep(0.5)

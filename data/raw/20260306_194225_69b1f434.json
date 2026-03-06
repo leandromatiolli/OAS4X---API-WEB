@@ -1,0 +1,26 @@
+{
+  "run_id": "20260306_194225_69b1f434",
+  "timestamp": "2026-03-06T19:42:32.661235Z",
+  "sample_rate_hz": 200000.0,
+  "duration_s": 5.0,
+  "channels": [
+    0,
+    1
+  ],
+  "num_channels": 2,
+  "samples_per_channel": 1000000,
+  "software_version": "0.1.0",
+  "test_name": "20260306_194225_69b1f434",
+  "binary_file": "20260306_194225_69b1f434.bin",
+  "format": "interleaved_float32",
+  "range": "UNI5VOLTS",
+  "ellipse_params": {
+    "S1": [
+      1.5107252597808838,
+      1.732339859008789,
+      0.8541138172149658,
+      1.2769118547439575,
+      0.5490475296974182
+    ]
+  }
+}
