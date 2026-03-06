@@ -95,12 +95,13 @@
       showStatus('Erro de conexão WebSocket.', true);
     };
     ws.onclose = function () {
+      if (ws !== this) return;
+      ws = null;
       btnStart.disabled = false;
       btnStop.disabled = true;
       if (statusEl.textContent.indexOf('Erro') === -1) {
         showStatus('Espectro parado.');
       }
-      ws = null;
       fetch(API + '/daq/reset', { method: 'POST' }).catch(function () {});
     };
   }
@@ -108,7 +109,6 @@
   function stopSpectrum() {
     if (ws) {
       ws.close();
-      ws = null;
     }
     fetch(API + '/spectrum/stop', { method: 'POST' })
       .then(function () { return fetch(API + '/daq/reset', { method: 'POST' }); })

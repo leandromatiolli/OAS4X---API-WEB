@@ -221,8 +221,10 @@ def start_spectrum(
     time.sleep(1.0)
     global _spectrum_thread, _spectrum_sensor, _spectrum_interval_s, _spectrum_frame
     with _spectrum_lock:
-        if _spectrum_thread is not None and _spectrum_thread.is_alive():
-            return False, "Aguarde: espectro ainda encerrando."
+        thread_alive = _spectrum_thread is not None and _spectrum_thread.is_alive()
+    if thread_alive:
+        return False, "Aguarde: espectro ainda encerrando."
+    with _spectrum_lock:
         _spectrum_frame = None
     _spectrum_stop.clear()
     _spectrum_sensor = sensor

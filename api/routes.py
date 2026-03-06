@@ -48,6 +48,10 @@ from acquisition.spectrum import (
 
 router = APIRouter(prefix="/api", tags=["api"])
 
+# Qual conexão WebSocket "dona" do monitor/espectro; evita que um finally atrasado (conexão antiga) pare o serviço iniciado por outra.
+_monitor_stream_owner: Optional[int] = None
+_spectrum_stream_owner: Optional[int] = None
+
 
 # --- Calibração (Etapa 4) ---
 
@@ -354,6 +358,9 @@ async def monitor_stream(websocket: WebSocket):
         await websocket.send_json({"error": msg})
         await websocket.close()
         return
+    conn_id = id(websocket)
+    global _monitor_stream_owner
+    _monitor_stream_owner = conn_id
     try:
         while True:
             frame = get_last_frame()
@@ -370,7 +377,9 @@ async def monitor_stream(websocket: WebSocket):
     except Exception:
         pass
     finally:
-        stop_monitor()
+        if _monitor_stream_owner == conn_id:
+            _monitor_stream_owner = None
+            stop_monitor()
         try:
             import time
             time.sleep(0.3)
@@ -422,6 +431,9 @@ async def spectrum_stream(websocket: WebSocket):
         await websocket.send_json({"error": msg})
         await websocket.close()
         return
+    conn_id = id(websocket)
+    global _spectrum_stream_owner
+    _spectrum_stream_owner = conn_id
     try:
         last_sent = None
         while True:
@@ -441,7 +453,9 @@ async def spectrum_stream(websocket: WebSocket):
     except Exception:
         pass
     finally:
-        stop_spectrum()
+        if _spectrum_stream_owner == conn_id:
+            _spectrum_stream_owner = None
+            stop_spectrum()
         try:
             from acquisition.calibration_loop import restart_calibration_if_desired
             restart_calibration_if_desired()

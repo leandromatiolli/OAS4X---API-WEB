@@ -60,12 +60,13 @@
       showStatus('Monitor ativo – sensor ' + sensor + '. Atualização em tempo real.');
     };
     ws.onclose = function () {
+      if (ws !== this) return;
+      ws = null;
       btnStart.disabled = false;
       btnStop.disabled = true;
       if (statusEl.textContent.indexOf('Erro') === -1) {
         showStatus('Monitor parado.');
       }
-      ws = null;
       fetch(API + '/daq/reset', { method: 'POST' }).catch(function () {});
     };
     ws.onmessage = function (event) {
@@ -86,7 +87,6 @@
   function stopMonitor() {
     if (ws) {
       ws.close();
-      ws = null;
     }
     fetch(API + '/monitor/stop', { method: 'POST' })
       .then(function () { return fetch(API + '/daq/reset', { method: 'POST' }); })

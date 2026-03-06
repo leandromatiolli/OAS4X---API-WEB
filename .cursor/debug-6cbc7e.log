@@ -1,0 +1,119 @@
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829411.7816215}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829412.5904}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829435.0738974}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829435.5743504}
+{"sessionId": "6cbc7e", "message": "start_spectrum called", "data": {"sensor": "S1", "interval_s": 0.5}, "hypothesisId": "H5", "timestamp": 1772829437.398905}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829437.399387}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829437.900924}
+{"sessionId": "6cbc7e", "message": "start_spectrum after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829439.5015354}
+{"sessionId": "6cbc7e", "message": "Spectrum thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829439.8109243}
+{"sessionId": "6cbc7e", "message": "start_spectrum after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829440.0022194}
+{"sessionId": "6cbc7e", "message": "start_spectrum returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829440.0027323}
+{"sessionId": "6cbc7e", "message": "spectrum_stream: start_spectrum result", "data": {"ok": true, "msg": "Espectro iniciado."}, "hypothesisId": "H5", "timestamp": 1772829440.0028198}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829441.9637964}
+{"sessionId": "6cbc7e", "message": "Spectrum thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829441.9704194}
+{"sessionId": "6cbc7e", "message": "stop_spectrum after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829441.9714742}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829442.5842283}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829443.0846546}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829456.3766925}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829456.99316}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829457.4935987}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829459.2952318}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829459.896771}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829460.4984624}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829460.9988582}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829462.8002076}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829463.401882}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829463.902344}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829465.7047002}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829466.2051687}
+{"sessionId": "6cbc7e", "message": "start_monitor called", "data": {"sensor": "S1"}, "hypothesisId": "H5", "timestamp": 1772829468.9770901}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829468.9773333}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829469.5777261}
+{"sessionId": "6cbc7e", "message": "start_monitor after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829471.0783749}
+{"sessionId": "6cbc7e", "message": "Monitor thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829471.3588004}
+{"sessionId": "6cbc7e", "message": "start_monitor after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829471.3794217}
+{"sessionId": "6cbc7e", "message": "start_monitor returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829471.3796399}
+{"sessionId": "6cbc7e", "message": "monitor_stream: start_monitor result", "data": {"ok": true, "msg": "Monitor iniciado."}, "hypothesisId": "H5", "timestamp": 1772829471.3797402}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829498.1948452}
+{"sessionId": "6cbc7e", "message": "Monitor thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829498.2185664}
+{"sessionId": "6cbc7e", "message": "stop_monitor after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829498.2190275}
+{"sessionId": "6cbc7e", "message": "start_monitor called", "data": {"sensor": "S1"}, "hypothesisId": "H5", "timestamp": 1772829502.0338821}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829502.0340664}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829502.6343594}
+{"sessionId": "6cbc7e", "message": "start_monitor after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829504.134845}
+{"sessionId": "6cbc7e", "message": "Monitor thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829504.418863}
+{"sessionId": "6cbc7e", "message": "start_monitor after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829504.4356935}
+{"sessionId": "6cbc7e", "message": "start_monitor returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829504.435975}
+{"sessionId": "6cbc7e", "message": "monitor_stream: start_monitor result", "data": {"ok": true, "msg": "Monitor iniciado."}, "hypothesisId": "H5", "timestamp": 1772829504.436057}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829509.204884}
+{"sessionId": "6cbc7e", "message": "Monitor thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829509.2917843}
+{"sessionId": "6cbc7e", "message": "stop_monitor after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829509.2924492}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829511.815396}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829512.3158264}
+{"sessionId": "6cbc7e", "message": "start_spectrum called", "data": {"sensor": "S1", "interval_s": 0.5}, "hypothesisId": "H5", "timestamp": 1772829514.1432922}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829514.1437504}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829514.644104}
+{"sessionId": "6cbc7e", "message": "start_spectrum after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829516.24521}
+{"sessionId": "6cbc7e", "message": "Spectrum thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829516.510845}
+{"sessionId": "6cbc7e", "message": "start_spectrum after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829516.7464204}
+{"sessionId": "6cbc7e", "message": "start_spectrum returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829516.746604}
+{"sessionId": "6cbc7e", "message": "spectrum_stream: start_spectrum result", "data": {"ok": true, "msg": "Espectro iniciado."}, "hypothesisId": "H5", "timestamp": 1772829516.746658}
+{"sessionId": "6cbc7e", "message": "spectrum_stream finally", "data": {"conn_id": 140734537442768, "owner": 140734537423040, "will_stop": false}, "hypothesisId": "H6", "timestamp": 1772829517.1431372}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829543.1197648}
+{"sessionId": "6cbc7e", "message": "Spectrum thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829543.5929575}
+{"sessionId": "6cbc7e", "message": "stop_spectrum after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829543.5942006}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829544.207511}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829544.7080657}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829735.4081924}
+{"sessionId": "6cbc7e", "message": "spectrum_stream finally", "data": {"conn_id": 140734537423040, "owner": 140734537423040, "will_stop": true}, "hypothesisId": "H6", "timestamp": 1772829736.217308}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829736.217473}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829754.0045457}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829754.5055408}
+{"sessionId": "6cbc7e", "message": "start_spectrum called", "data": {"sensor": "S1", "interval_s": 0.1}, "hypothesisId": "H5", "timestamp": 1772829756.333346}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829756.3335657}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829756.8346996}
+{"sessionId": "6cbc7e", "message": "start_spectrum after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829758.435134}
+{"sessionId": "6cbc7e", "message": "Spectrum thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829758.7510376}
+{"sessionId": "6cbc7e", "message": "start_spectrum after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829758.9357796}
+{"sessionId": "6cbc7e", "message": "start_spectrum returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829758.935959}
+{"sessionId": "6cbc7e", "message": "spectrum_stream: start_spectrum result", "data": {"ok": true, "msg": "Espectro iniciado."}, "hypothesisId": "H5", "timestamp": 1772829758.9360385}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829761.920026}
+{"sessionId": "6cbc7e", "message": "Spectrum thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829761.958244}
+{"sessionId": "6cbc7e", "message": "stop_spectrum after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829761.9586854}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829762.5723832}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829763.0727928}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829764.8752518}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829765.3756518}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829767.1779675}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829767.678405}
+{"sessionId": "6cbc7e", "message": "start_spectrum called", "data": {"sensor": "S1", "interval_s": 0.1}, "hypothesisId": "H5", "timestamp": 1772829769.5031202}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829769.5035267}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829770.00389}
+{"sessionId": "6cbc7e", "message": "start_spectrum after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829771.6044424}
+{"sessionId": "6cbc7e", "message": "Spectrum thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829771.8708549}
+{"sessionId": "6cbc7e", "message": "start_spectrum after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829772.1063678}
+{"sessionId": "6cbc7e", "message": "start_spectrum returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829772.1065476}
+{"sessionId": "6cbc7e", "message": "spectrum_stream: start_spectrum result", "data": {"ok": true, "msg": "Espectro iniciado."}, "hypothesisId": "H5", "timestamp": 1772829772.106617}
+{"sessionId": "6cbc7e", "message": "spectrum_stream finally", "data": {"conn_id": 140734170173904, "owner": 140734170413696, "will_stop": false}, "hypothesisId": "H6", "timestamp": 1772829772.1275432}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829776.6494462}
+{"sessionId": "6cbc7e", "message": "Spectrum thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829776.6747427}
+{"sessionId": "6cbc7e", "message": "stop_spectrum after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829776.675413}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829777.2773132}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829777.7776752}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829779.5796893}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829780.0803227}
+{"sessionId": "6cbc7e", "message": "start_monitor called", "data": {"sensor": "S1"}, "hypothesisId": "H5", "timestamp": 1772829782.9428878}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829782.9431052}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829783.543439}
+{"sessionId": "6cbc7e", "message": "start_monitor after stop+sleep: thread_alive check", "data": {"thread_alive": false}, "hypothesisId": "H3", "timestamp": 1772829785.043959}
+{"sessionId": "6cbc7e", "message": "Monitor thread: about to connect", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829785.3107827}
+{"sessionId": "6cbc7e", "message": "start_monitor after thread.start: new thread alive?", "data": {"new_thread_alive": true}, "hypothesisId": "H4", "timestamp": 1772829785.3454745}
+{"sessionId": "6cbc7e", "message": "start_monitor returning True", "data": {}, "hypothesisId": "H5", "timestamp": 1772829785.3460157}
+{"sessionId": "6cbc7e", "message": "monitor_stream: start_monitor result", "data": {"ok": true, "msg": "Monitor iniciado."}, "hypothesisId": "H5", "timestamp": 1772829785.3461754}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829788.8154566}
+{"sessionId": "6cbc7e", "message": "Monitor thread: released DAQ, exiting", "data": {"sensor": "S1"}, "hypothesisId": "H1", "timestamp": 1772829788.8607903}
+{"sessionId": "6cbc7e", "message": "stop_monitor after join", "data": {"thread_still_alive": false}, "hypothesisId": "H1", "timestamp": 1772829788.8610666}
+{"sessionId": "6cbc7e", "message": "spectrum_stream finally", "data": {"conn_id": 140734170413696, "owner": 140734170413696, "will_stop": true}, "hypothesisId": "H6", "timestamp": 1772829970.6815767}
+{"sessionId": "6cbc7e", "message": "stop_spectrum called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829970.6817672}
+{"sessionId": "6cbc7e", "message": "stop_monitor called", "data": {}, "hypothesisId": "H1", "timestamp": 1772829971.289859}

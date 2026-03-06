@@ -219,8 +219,9 @@ def start_monitor(sensor: str, range_id: str = "BIP5VOLTS") -> Tuple[bool, str]:
     time.sleep(1.0)
     global _monitor_thread, _monitor_stop, _monitor_sensor
     with _monitor_lock:
-        if _monitor_thread is not None and _monitor_thread.is_alive():
-            return False, "Aguarde: monitor ainda encerrando."
+        thread_alive = _monitor_thread is not None and _monitor_thread.is_alive()
+    if thread_alive:
+        return False, "Aguarde: monitor ainda encerrando."
     _monitor_stop.clear()
     _monitor_sensor = sensor
     _monitor_thread = threading.Thread(
